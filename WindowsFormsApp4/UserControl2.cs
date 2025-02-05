@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class FRMInicioSesion : Form
+    public partial class UserControl2 : UserControl
     {
-        public FRMInicioSesion()
+        public UserControl2()
         {
             InitializeComponent();
         }

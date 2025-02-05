@@ -12,14 +12,37 @@ namespace WindowsFormsApp4
 {
     public partial class FRMIniciarSesion : Form
     {
+        public List<string> datos = new List<string>();
         public FRMIniciarSesion()
         {
             InitializeComponent();
+            FRMRegistro3 Registro3 = new FRMRegistro3(this);
         }
 
+        bool x = false, y = false;  
         private void BTSGuiente_Click(object sender, EventArgs e)
         {
-
+            foreach (string s in datos)
+            {
+                if (s == Usuario.Text)
+                {
+                    x = true;
+                }
+                if (s == TBContraseña.Text)
+                {
+                    y = true;
+                }
+            }
+            if (x == true && y == true)
+            {
+                FormPrincipal FormPrincipal = new FormPrincipal();
+                FormPrincipal.Show();
+                this.Hide();
+            }
+            else 
+            {
+                MessageBox.Show("Usario o contraseña incorrecta");
+            }
         }
 
         private void BTATras_Click(object sender, EventArgs e)

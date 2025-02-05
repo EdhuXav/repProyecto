@@ -47,9 +47,10 @@
             this.cual.AutoSize = true;
             this.cual.BackColor = System.Drawing.Color.Transparent;
             this.cual.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cual.Location = new System.Drawing.Point(22, 36);
+            this.cual.Location = new System.Drawing.Point(29, 44);
+            this.cual.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cual.Name = "cual";
-            this.cual.Size = new System.Drawing.Size(354, 22);
+            this.cual.Size = new System.Drawing.Size(451, 28);
             this.cual.TabIndex = 0;
             this.cual.Text = "¿Cuál es su nivel de actividad básico?";
             // 
@@ -58,9 +59,10 @@
             this.CBNomuyactivo.AutoSize = true;
             this.CBNomuyactivo.BackColor = System.Drawing.Color.Transparent;
             this.CBNomuyactivo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBNomuyactivo.Location = new System.Drawing.Point(44, 79);
+            this.CBNomuyactivo.Location = new System.Drawing.Point(59, 97);
+            this.CBNomuyactivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBNomuyactivo.Name = "CBNomuyactivo";
-            this.CBNomuyactivo.Size = new System.Drawing.Size(117, 19);
+            this.CBNomuyactivo.Size = new System.Drawing.Size(146, 24);
             this.CBNomuyactivo.TabIndex = 1;
             this.CBNomuyactivo.Text = "No muy activo";
             this.CBNomuyactivo.UseVisualStyleBackColor = false;
@@ -71,9 +73,10 @@
             this.cajero.BackColor = System.Drawing.Color.Transparent;
             this.cajero.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cajero.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.cajero.Location = new System.Drawing.Point(62, 101);
+            this.cajero.Location = new System.Drawing.Point(83, 124);
+            this.cajero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cajero.Name = "cajero";
-            this.cajero.Size = new System.Drawing.Size(221, 26);
+            this.cajero.Size = new System.Drawing.Size(299, 34);
             this.cajero.TabIndex = 2;
             this.cajero.Text = "Pasa la mayor parte del dia sentado (p.ej.: es \r\ncajero o trabaja en una oficina)" +
     "";
@@ -84,9 +87,10 @@
             this.CBLigeramenteactivo.AutoSize = true;
             this.CBLigeramenteactivo.BackColor = System.Drawing.Color.Transparent;
             this.CBLigeramenteactivo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBLigeramenteactivo.Location = new System.Drawing.Point(44, 139);
+            this.CBLigeramenteactivo.Location = new System.Drawing.Point(59, 171);
+            this.CBLigeramenteactivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBLigeramenteactivo.Name = "CBLigeramenteactivo";
-            this.CBLigeramenteactivo.Size = new System.Drawing.Size(152, 19);
+            this.CBLigeramenteactivo.Size = new System.Drawing.Size(189, 24);
             this.CBLigeramenteactivo.TabIndex = 3;
             this.CBLigeramenteactivo.Text = "Ligeramente activo";
             this.CBLigeramenteactivo.UseVisualStyleBackColor = false;
@@ -96,9 +100,10 @@
             this.profesor.AutoSize = true;
             this.profesor.BackColor = System.Drawing.Color.Transparent;
             this.profesor.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.profesor.Location = new System.Drawing.Point(62, 161);
+            this.profesor.Location = new System.Drawing.Point(83, 198);
+            this.profesor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.profesor.Name = "profesor";
-            this.profesor.Size = new System.Drawing.Size(247, 26);
+            this.profesor.Size = new System.Drawing.Size(311, 32);
             this.profesor.TabIndex = 4;
             this.profesor.Text = "Pasa buena parte del dia de pie. (p. ej.: es profesor\r\no vendedor)";
             // 
@@ -107,9 +112,10 @@
             this.CBActivo.AutoSize = true;
             this.CBActivo.BackColor = System.Drawing.Color.Transparent;
             this.CBActivo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBActivo.Location = new System.Drawing.Point(44, 200);
+            this.CBActivo.Location = new System.Drawing.Point(59, 246);
+            this.CBActivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBActivo.Name = "CBActivo";
-            this.CBActivo.Size = new System.Drawing.Size(67, 19);
+            this.CBActivo.Size = new System.Drawing.Size(83, 24);
             this.CBActivo.TabIndex = 5;
             this.CBActivo.Text = "Activo";
             this.CBActivo.UseVisualStyleBackColor = false;
@@ -119,9 +125,10 @@
             this.mesero.AutoSize = true;
             this.mesero.BackColor = System.Drawing.Color.Transparent;
             this.mesero.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.mesero.Location = new System.Drawing.Point(62, 222);
+            this.mesero.Location = new System.Drawing.Point(83, 273);
+            this.mesero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mesero.Name = "mesero";
-            this.mesero.Size = new System.Drawing.Size(210, 26);
+            this.mesero.Size = new System.Drawing.Size(264, 32);
             this.mesero.TabIndex = 6;
             this.mesero.Text = "Pasa buena parte del dia haciendo alguna \r\nactividad fisica (p. ej.: mesero carte" +
     "ro)";
@@ -131,9 +138,10 @@
             this.CBMuyactivo.AutoSize = true;
             this.CBMuyactivo.BackColor = System.Drawing.Color.Transparent;
             this.CBMuyactivo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBMuyactivo.Location = new System.Drawing.Point(44, 265);
+            this.CBMuyactivo.Location = new System.Drawing.Point(59, 326);
+            this.CBMuyactivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CBMuyactivo.Name = "CBMuyactivo";
-            this.CBMuyactivo.Size = new System.Drawing.Size(88, 18);
+            this.CBMuyactivo.Size = new System.Drawing.Size(107, 21);
             this.CBMuyactivo.TabIndex = 7;
             this.CBMuyactivo.Text = "Muy activo";
             this.CBMuyactivo.UseVisualStyleBackColor = false;
@@ -143,9 +151,10 @@
             this.mensajero.AutoSize = true;
             this.mensajero.BackColor = System.Drawing.Color.Transparent;
             this.mensajero.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.mensajero.Location = new System.Drawing.Point(62, 286);
+            this.mensajero.Location = new System.Drawing.Point(83, 352);
+            this.mensajero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mensajero.Name = "mensajero";
-            this.mensajero.Size = new System.Drawing.Size(230, 39);
+            this.mensajero.Size = new System.Drawing.Size(292, 48);
             this.mensajero.TabIndex = 8;
             this.mensajero.Text = "Pasa la mayor parte del dia haciendo actividad \r\nfisica intensa (p. ej.: es mensa" +
     "jero ciclista o\r\ncarpintero)";
@@ -154,9 +163,10 @@
             // 
             this.BTSiguientee.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.BTSiguientee.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTSiguientee.Location = new System.Drawing.Point(468, 296);
+            this.BTSiguientee.Location = new System.Drawing.Point(624, 364);
+            this.BTSiguientee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTSiguientee.Name = "BTSiguientee";
-            this.BTSiguientee.Size = new System.Drawing.Size(100, 36);
+            this.BTSiguientee.Size = new System.Drawing.Size(133, 44);
             this.BTSiguientee.TabIndex = 9;
             this.BTSiguientee.Text = "Siguiente";
             this.BTSiguientee.UseVisualStyleBackColor = false;
@@ -166,9 +176,10 @@
             // 
             this.BTAtrass.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.BTAtrass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTAtrass.Location = new System.Drawing.Point(333, 296);
+            this.BTAtrass.Location = new System.Drawing.Point(444, 364);
+            this.BTAtrass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTAtrass.Name = "BTAtrass";
-            this.BTAtrass.Size = new System.Drawing.Size(100, 36);
+            this.BTAtrass.Size = new System.Drawing.Size(133, 44);
             this.BTAtrass.TabIndex = 10;
             this.BTAtrass.Text = "Atrás";
             this.BTAtrass.UseVisualStyleBackColor = false;
@@ -176,11 +187,11 @@
             // 
             // FRMRegistro2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(596, 361);
+            this.ClientSize = new System.Drawing.Size(786, 441);
             this.Controls.Add(this.BTAtrass);
             this.Controls.Add(this.BTSiguientee);
             this.Controls.Add(this.mensajero);
@@ -193,6 +204,7 @@
             this.Controls.Add(this.CBNomuyactivo);
             this.Controls.Add(this.cual);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FRMRegistro2";
             this.Text = "FRMRegistro2";
             this.ResumeLayout(false);

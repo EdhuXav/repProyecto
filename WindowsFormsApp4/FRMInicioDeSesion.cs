@@ -23,5 +23,12 @@ namespace WindowsFormsApp4
             registro.Show();
             this.Hide();
         }
+
+        private void BTAtrass_Click(object sender, EventArgs e)
+        {
+            Proyecto proyecto = new Proyecto();
+            proyecto.Show();
+            this.Hide();
+        }
     }
 }

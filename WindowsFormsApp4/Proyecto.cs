@@ -22,11 +22,13 @@ namespace WindowsFormsApp4
             FRMInicioDeSesion inicioDeSesion = new FRMInicioDeSesion();
             inicioDeSesion.Show();
             this.Hide();
+
+
         }
 
         private void BTIniciarSesion_Click(object sender, EventArgs e)
         {
-            FRMInicioSesion fRMInicioSesion = new FRMInicioSesion();
+            FRMIniciarSesion fRMInicioSesion = new FRMIniciarSesion();
             fRMInicioSesion.Show();
             this.Hide();
         }

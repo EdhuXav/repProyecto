@@ -31,7 +31,8 @@ namespace WindowsFormsApp4
 
         private void BTSiguiiente_Click(object sender, EventArgs e)
         {
-            FRMRegistro3 fRMRegistro3 = new FRMRegistro3();
+            FRMIniciarSesion frmInicio = new FRMIniciarSesion(); 
+            FRMRegistro3 fRMRegistro3 = new FRMRegistro3(frmInicio);
             fRMRegistro3.Show();
             this.Hide();
         }
