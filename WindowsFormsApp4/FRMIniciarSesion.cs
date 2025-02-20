@@ -19,21 +19,18 @@ namespace WindowsFormsApp4
             FRMRegistro3 Registro3 = new FRMRegistro3(this);
         }
 
-        bool x = false, y = false;  
+        bool x = false; 
         private void BTSGuiente_Click(object sender, EventArgs e)
         {
             foreach (string s in datos)
             {
-                if (s == Usuario.Text)
+                if (s == Usuario.Text && s == TBContraseña.Text)
                 {
                     x = true;
                 }
-                if (s == TBContraseña.Text)
-                {
-                    y = true;
-                }
+
             }
-            if (x == true && y == true)
+            if (x == true)
             {
                 FormPrincipal FormPrincipal = new FormPrincipal();
                 FormPrincipal.Show();

@@ -40,10 +40,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.botonConfiguracion = new System.Windows.Forms.Button();
             this.botonNotificaciones = new System.Windows.Forms.Button();
+            this.userControl41 = new WindowsFormsApp4.UserControl4();
             this.userControl31 = new WindowsFormsApp4.UserControl3();
             this.userControl21 = new WindowsFormsApp4.UserControl2();
             this.userControl11 = new WindowsFormsApp4.UserControl1();
-            this.userControl41 = new WindowsFormsApp4.UserControl4();
+            this.userControl51 = new WindowsFormsApp4.UserControl5();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -217,9 +218,16 @@
             this.botonNotificaciones.TabIndex = 4;
             this.botonNotificaciones.UseVisualStyleBackColor = true;
             // 
+            // userControl41
+            // 
+            this.userControl41.Location = new System.Drawing.Point(255, 77);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(1117, 701);
+            this.userControl41.TabIndex = 8;
+            // 
             // userControl31
             // 
-            this.userControl31.Location = new System.Drawing.Point(255, 75);
+            this.userControl31.Location = new System.Drawing.Point(255, 72);
             this.userControl31.Name = "userControl31";
             this.userControl31.Size = new System.Drawing.Size(1117, 703);
             this.userControl31.TabIndex = 7;
@@ -241,18 +249,19 @@
             this.userControl11.TabIndex = 5;
             this.userControl11.Load += new System.EventHandler(this.userControl11_Load);
             // 
-            // userControl41
+            // userControl51
             // 
-            this.userControl41.Location = new System.Drawing.Point(255, 74);
-            this.userControl41.Name = "userControl41";
-            this.userControl41.Size = new System.Drawing.Size(1117, 701);
-            this.userControl41.TabIndex = 8;
+            this.userControl51.Location = new System.Drawing.Point(255, 72);
+            this.userControl51.Name = "userControl51";
+            this.userControl51.Size = new System.Drawing.Size(1117, 691);
+            this.userControl51.TabIndex = 9;
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1372, 778);
+            this.Controls.Add(this.userControl51);
             this.Controls.Add(this.userControl41);
             this.Controls.Add(this.userControl31);
             this.Controls.Add(this.userControl21);
@@ -284,5 +293,6 @@
         private UserControl2 userControl21;
         private UserControl3 userControl31;
         private UserControl4 userControl41;
+        private UserControl5 userControl51;
     }
 }

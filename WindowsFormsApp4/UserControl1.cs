@@ -21,5 +21,14 @@ namespace WindowsFormsApp4
         {
 
         }
+
+        private void botonSaludAlimentaria_Click(object sender, EventArgs e)
+        {
+            FormPrincipal mainForm = this.FindForm() as FormPrincipal;
+            if (mainForm != null)
+            {
+                mainForm.MostrarUserControl5(); // Llamamos a la función del Formulario Principal
+            }
+        }
     }
 }

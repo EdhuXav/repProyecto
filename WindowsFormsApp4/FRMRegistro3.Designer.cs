@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TBContraseña = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // creacuenta
@@ -129,8 +130,20 @@
             this.TBContraseña.Location = new System.Drawing.Point(100, 258);
             this.TBContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.TBContraseña.Name = "TBContraseña";
+            this.TBContraseña.PasswordChar = '*';
             this.TBContraseña.Size = new System.Drawing.Size(268, 26);
             this.TBContraseña.TabIndex = 7;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(334, 262);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(31, 22);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FRMRegistro3
             // 
@@ -139,6 +152,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(795, 444);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.TBContraseña);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
@@ -166,5 +180,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TBContraseña;
+        private System.Windows.Forms.Button button1;
     }
 }

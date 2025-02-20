@@ -7,15 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static WindowsFormsApp4.FRMRegistro;
 
 namespace WindowsFormsApp4
 {
     public partial class FormPrincipal : Form
     {
-        
+        private UserControl5 userControl5;
+
         public FormPrincipal()
         {
             InitializeComponent();
+            // Inicializa UserControl5
+            userControl5 = new UserControl5();
+            userControl5.Dock = DockStyle.Fill;
+            this.Controls.Add(userControl5);
+            userControl5.Visible = false; // Ocultarlo al inicio
+
             userControl11.Dock = DockStyle.Fill;
             SidePanel.Height = botonHome.Height;
             SidePanel.Top = botonHome.Top;
@@ -43,7 +51,7 @@ namespace WindowsFormsApp4
 
         private void userControl11_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void userControl21_Load(object sender, EventArgs e)
@@ -53,8 +61,14 @@ namespace WindowsFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //
             SidePanel.Height = button1.Height;
             SidePanel.Top = button1.Top;
+
+            // Muestra los objetivos seleccionados en el UserControl
+            userControl31.MostrarObjetivos(Sesion.ObjetivosSeleccionados);
+
+            // Trae el UserControl al frente
             userControl31.BringToFront();
         }
 
@@ -69,5 +83,15 @@ namespace WindowsFormsApp4
             SidePanel.Top = button2.Top;
             userControl41.BringToFront();
         }
+
+        public void MostrarUserControl5()
+        {
+            SidePanel.Height = botonHome.Height; // Ajusta el panel lateral si es necesario
+            SidePanel.Top = botonHome.Top;
+            userControl5.Visible = true;
+            userControl5.BringToFront();
+        }
     }
 }
+
+

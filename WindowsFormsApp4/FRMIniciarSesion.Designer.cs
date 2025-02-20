@@ -66,7 +66,7 @@
             // 
             this.Usuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Usuario.Location = new System.Drawing.Point(132, 177);
-            this.Usuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Usuario.Margin = new System.Windows.Forms.Padding(4);
             this.Usuario.Name = "Usuario";
             this.Usuario.Size = new System.Drawing.Size(265, 29);
             this.Usuario.TabIndex = 2;
@@ -87,8 +87,9 @@
             // 
             this.TBContraseña.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TBContraseña.Location = new System.Drawing.Point(132, 289);
-            this.TBContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TBContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.TBContraseña.Name = "TBContraseña";
+            this.TBContraseña.PasswordChar = '*';
             this.TBContraseña.Size = new System.Drawing.Size(265, 29);
             this.TBContraseña.TabIndex = 4;
             // 
@@ -97,7 +98,7 @@
             this.BTIniciar.BackColor = System.Drawing.Color.MediumAquamarine;
             this.BTIniciar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTIniciar.Location = new System.Drawing.Point(613, 367);
-            this.BTIniciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTIniciar.Margin = new System.Windows.Forms.Padding(4);
             this.BTIniciar.Name = "BTIniciar";
             this.BTIniciar.Size = new System.Drawing.Size(135, 44);
             this.BTIniciar.TabIndex = 5;
@@ -110,7 +111,7 @@
             this.BTATras.BackColor = System.Drawing.Color.MediumAquamarine;
             this.BTATras.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTATras.Location = new System.Drawing.Point(451, 367);
-            this.BTATras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTATras.Margin = new System.Windows.Forms.Padding(4);
             this.BTATras.Name = "BTATras";
             this.BTATras.Size = new System.Drawing.Size(135, 44);
             this.BTATras.TabIndex = 6;
@@ -133,7 +134,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRMIniciarSesion";
             this.Text = "FRMIniciarSesion";
             this.ResumeLayout(false);
