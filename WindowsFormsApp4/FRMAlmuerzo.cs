@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class UserControl4 : UserControl
+    public partial class FRMAlmuerzo : Form
     {
-        public UserControl4()
+        public FRMAlmuerzo()
         {
             InitializeComponent();
         }

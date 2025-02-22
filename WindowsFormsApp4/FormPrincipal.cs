@@ -13,21 +13,15 @@ namespace WindowsFormsApp4
 {
     public partial class FormPrincipal : Form
     {
-        private UserControl5 userControl5;
+
 
         public FormPrincipal()
         {
             InitializeComponent();
-            // Inicializa UserControl5
-            userControl5 = new UserControl5();
-            userControl5.Dock = DockStyle.Fill;
-            this.Controls.Add(userControl5);
-            userControl5.Visible = false; // Ocultarlo al inicio
 
-            userControl11.Dock = DockStyle.Fill;
             SidePanel.Height = botonHome.Height;
             SidePanel.Top = botonHome.Top;
-            userControl11.BringToFront();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -39,57 +33,68 @@ namespace WindowsFormsApp4
         {
             SidePanel.Height = button3.Height;
             SidePanel.Top = button3.Top;
-            userControl21.BringToFront();
+            AbrirObjetivos(new FRMPerfil());
         }
 
         private void botonHome_Click(object sender, EventArgs e)
         {
             SidePanel.Height = botonHome.Height;
             SidePanel.Top = botonHome.Top;
-            userControl11.BringToFront();
-        }
-
-        private void userControl11_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void userControl21_Load(object sender, EventArgs e)
-        {
+            panelContenedor.Hide();
 
         }
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //
             SidePanel.Height = button1.Height;
             SidePanel.Top = button1.Top;
-
-            // Muestra los objetivos seleccionados en el UserControl
-            userControl31.MostrarObjetivos(Sesion.ObjetivosSeleccionados);
-
-            // Trae el UserControl al frente
-            userControl31.BringToFront();
+            AbrirObjetivos(new FRMObjetivos());
         }
-
-        private void userControl31_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             SidePanel.Height = button2.Height;
             SidePanel.Top = button2.Top;
-            userControl41.BringToFront();
+            AbrirObjetivos(new FRMLogros());
         }
 
-        public void MostrarUserControl5()
+        private void botonSaludAlimentaria_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = botonHome.Height; // Ajusta el panel lateral si es necesario
-            SidePanel.Top = botonHome.Top;
-            userControl5.Visible = true;
-            userControl5.BringToFront();
+            FRMElegirComida frmElegirComida = new FRMElegirComida(this);  
+
+            panelContenedor.Visible = true;
+
+            if (this.panelContenedor.Controls.Count > 0)
+            {
+                this.panelContenedor.Controls.RemoveAt(0);
+            }
+            frmElegirComida.TopLevel = false;
+            frmElegirComida.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(frmElegirComida);
+            this.panelContenedor.Tag = frmElegirComida;
+            frmElegirComida.Show();
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+    
+        }
+        private void AbrirObjetivos(object abrirObjetivos)
+        {
+            
+            panelContenedor.Visible = true;
+
+            if (this.panelContenedor.Controls.Count > 0)
+            {
+                this.panelContenedor.Controls.RemoveAt(0);
+            }
+            Form fo = abrirObjetivos as Form;
+            fo.TopLevel = false;
+            fo.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fo);
+            this.panelContenedor.Tag = fo;
+            fo.Show();
         }
     }
 }

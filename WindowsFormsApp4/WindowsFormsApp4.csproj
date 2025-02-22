@@ -56,6 +56,48 @@
     <Compile Include="FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMAlmuerzo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAlmuerzo.Designer.cs">
+      <DependentUpon>FRMAlmuerzo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDesayuno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDesayuno.Designer.cs">
+      <DependentUpon>FRMDesayuno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMElegirComida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMElegirComida.Designer.cs">
+      <DependentUpon>FRMElegirComida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMLogros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMLogros.Designer.cs">
+      <DependentUpon>FRMLogros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMObjetivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMObjetivos.Designer.cs">
+      <DependentUpon>FRMObjetivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMOpciones.Designer.cs">
+      <DependentUpon>FRMOpciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPerfil.Designer.cs">
+      <DependentUpon>FRMPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Proyecto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,44 +142,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl2.Designer.cs">
-      <DependentUpon>UserControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl3.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl3.Designer.cs">
-      <DependentUpon>UserControl3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl4.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl4.Designer.cs">
-      <DependentUpon>UserControl4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl5.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl5.Designer.cs">
-      <DependentUpon>UserControl5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl6.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl6.Designer.cs">
-      <DependentUpon>UserControl6.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAlmuerzo.resx">
+      <DependentUpon>FRMAlmuerzo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDesayuno.resx">
+      <DependentUpon>FRMDesayuno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMElegirComida.resx">
+      <DependentUpon>FRMElegirComida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMLogros.resx">
+      <DependentUpon>FRMLogros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMObjetivos.resx">
+      <DependentUpon>FRMObjetivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMOpciones.resx">
+      <DependentUpon>FRMOpciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPerfil.resx">
+      <DependentUpon>FRMPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Proyecto.resx">
       <DependentUpon>Proyecto.cs</DependentUpon>
@@ -169,24 +196,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl2.resx">
-      <DependentUpon>UserControl2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl3.resx">
-      <DependentUpon>UserControl3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl4.resx">
-      <DependentUpon>UserControl4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl5.resx">
-      <DependentUpon>UserControl5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl6.resx">
-      <DependentUpon>UserControl6.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

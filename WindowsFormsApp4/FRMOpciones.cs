@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class UserControl5 : UserControl
+    public partial class FRMOpciones : Form
     {
-        public UserControl5()
+        public FRMOpciones()
         {
             InitializeComponent();
-        }
-
-        private void BTDesayuno_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

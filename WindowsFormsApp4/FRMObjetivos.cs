@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class UserControl2 : UserControl
+    public partial class FRMObjetivos : Form
     {
-        public UserControl2()
+        public FRMObjetivos()
         {
             InitializeComponent();
+            label1.BackColor = Color.Transparent;
+            pictureBox1.BackColor = Color.Transparent;  
+        }
+
+        private void FRMObjetivos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,16 +1,16 @@
 ﻿namespace WindowsFormsApp4
 {
-    partial class UserControl1
+    partial class FRMOpciones
     {
-        /// <summary> 
-        /// Variable del diseñador necesaria.
+        /// <summary>
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Limpiar los recursos que se estén usando.
+        /// <summary>
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,15 +20,15 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de componentes
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMOpciones));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,30 +59,30 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 38);
+            this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(776, 100);
-            this.label1.TabIndex = 11;
+            this.label1.TabIndex = 12;
             this.label1.Text = "SINCRONÍA DE VIDA";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(735, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(745, 18);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(315, 248);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 172);
+            this.label2.Location = new System.Drawing.Point(26, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(583, 100);
-            this.label2.TabIndex = 15;
+            this.label2.TabIndex = 16;
             this.label2.Text = "Velamos por tu bienestar";
             // 
             // panel3
@@ -96,8 +96,8 @@
             this.panel3.Location = new System.Drawing.Point(0, 290);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1042, 401);
-            this.panel3.TabIndex = 16;
+            this.panel3.Size = new System.Drawing.Size(1080, 393);
+            this.panel3.TabIndex = 17;
             // 
             // panel6
             // 
@@ -106,7 +106,7 @@
             this.panel6.Controls.Add(this.botonSaludFisica);
             this.panel6.Controls.Add(this.pictureBox2);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(43, 110);
+            this.panel6.Location = new System.Drawing.Point(62, 106);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(275, 271);
@@ -155,7 +155,7 @@
             this.panel5.Controls.Add(this.botonSaludMental);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(378, 110);
+            this.panel5.Location = new System.Drawing.Point(397, 106);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(275, 271);
@@ -204,7 +204,7 @@
             this.panel7.Controls.Add(this.botonSaludAlimentaria);
             this.panel7.Controls.Add(this.pictureBox3);
             this.panel7.Controls.Add(this.label3);
-            this.panel7.Location = new System.Drawing.Point(714, 110);
+            this.panel7.Location = new System.Drawing.Point(733, 106);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(269, 271);
@@ -224,7 +224,6 @@
             this.botonSaludAlimentaria.TabIndex = 4;
             this.botonSaludAlimentaria.Text = "Más...";
             this.botonSaludAlimentaria.UseVisualStyleBackColor = false;
-            this.botonSaludAlimentaria.Click += new System.EventHandler(this.botonSaludAlimentaria_Click);
             // 
             // pictureBox3
             // 
@@ -251,23 +250,24 @@
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel4.Location = new System.Drawing.Point(11, 53);
+            this.panel4.Location = new System.Drawing.Point(30, 49);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(999, 32);
             this.panel4.TabIndex = 0;
             // 
-            // UserControl1
+            // FRMOpciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1080, 683);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(1042, 691);
-            this.Load += new System.EventHandler(this.UserControl1_Load);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FRMOpciones";
+            this.Text = "FRMOpciones";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
