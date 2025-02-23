@@ -15,6 +15,7 @@ namespace WindowsFormsApp4
         public FRMPerfil()
         {
             InitializeComponent();
+            this.Load += new EventHandler(FRMPerfil_Load);
             if (Globales.ImagenPerfil != null)
             {
                 pictureBox3.Image = Globales.ImagenPerfil;
@@ -28,8 +29,13 @@ namespace WindowsFormsApp4
             label4.BackColor = Color.Transparent;
             label5.BackColor = Color.Transparent;
             label6.BackColor = Color.Transparent;
+            label7.BackColor = Color.Transparent;
             label8.BackColor = Color.Transparent;
             label9.BackColor = Color.Transparent;
+            label10.BackColor = Color.Transparent;
+            label11.BackColor = Color.Transparent;
+            label12.BackColor = Color.Transparent;
+            label13.BackColor = Color.Transparent;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -49,7 +55,17 @@ namespace WindowsFormsApp4
                 pictureBox3.Image = Globales.ImagenPerfil;
             }
         }
-    public static class Globales
+
+        private void FRMPerfil_Load(object sender, EventArgs e)
+        {
+            // Cargar datos almacenados en la clase Sesion
+            label7.Text = DatosUsuario.Nombre; // Si tienes un campo de nombre
+            label10.Text = DatosUsuario.Edad;
+            label11.Text = DatosUsuario.Altura;
+            label12.Text = DatosUsuario.Peso;
+            label13.Text = DatosUsuario.Genero;
+        }
+        public static class Globales
         {
             public static Image ImagenPerfil { get; set; }
         }

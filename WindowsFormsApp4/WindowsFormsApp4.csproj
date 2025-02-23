@@ -50,6 +50,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatosUsuario.cs" />
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +116,12 @@
     </Compile>
     <Compile Include="FRMPerfil.Designer.cs">
       <DependentUpon>FRMPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMRompe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRompe.Designer.cs">
+      <DependentUpon>FRMRompe.cs</DependentUpon>
     </Compile>
     <Compile Include="Proyecto.cs">
       <SubType>Form</SubType>
@@ -192,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMPerfil.resx">
       <DependentUpon>FRMPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMRompe.resx">
+      <DependentUpon>FRMRompe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Proyecto.resx">
       <DependentUpon>Proyecto.cs</DependentUpon>

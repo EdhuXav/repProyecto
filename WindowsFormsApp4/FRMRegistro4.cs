@@ -31,6 +31,11 @@ namespace WindowsFormsApp4
 
         private void BTSiguiiente_Click(object sender, EventArgs e)
         {
+            DatosUsuario.Edad = textBox1.Text;
+            DatosUsuario.Altura = textBox2.Text;
+            DatosUsuario.Peso = textBox3.Text;
+            DatosUsuario.Genero = checkBox1.Checked ? "Hombre" : checkBox2.Checked ? "Mujer" : "No especificado";
+
             FRMIniciarSesion frmInicio = new FRMIniciarSesion(); 
             FRMRegistro3 fRMRegistro3 = new FRMRegistro3(frmInicio);
             fRMRegistro3.Show();

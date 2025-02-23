@@ -14,7 +14,6 @@ namespace WindowsFormsApp4
     public partial class FormPrincipal : Form
     {
 
-        private FormPrincipal formPrincipal;
         public FormPrincipal()
         {
             InitializeComponent();

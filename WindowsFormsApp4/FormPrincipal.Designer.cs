@@ -444,9 +444,9 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.Location = new System.Drawing.Point(256, 75);
+            this.panelContenedor.Location = new System.Drawing.Point(256, 83);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1080, 683);
+            this.panelContenedor.Size = new System.Drawing.Size(1080, 675);
             this.panelContenedor.TabIndex = 20;
             // 
             // FormPrincipal

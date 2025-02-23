@@ -33,7 +33,7 @@
 
         private void btnDesayuno_Click(object sender, EventArgs e)
         {
-            AbrirObjetivos(new FRMDesayuno());
+            AbrirObjetivos(new FRMDesayuno(formPrincipal));
         }
 
         private void btnAlmuerzo_Click(object sender, EventArgs e)

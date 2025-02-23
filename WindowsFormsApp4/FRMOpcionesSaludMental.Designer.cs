@@ -77,7 +77,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(46, 111);
+            this.pictureBox3.Location = new System.Drawing.Point(44, 115);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(274, 92);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -104,12 +104,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(822, 560);
+            this.button3.Location = new System.Drawing.Point(819, 560);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(169, 66);
             this.button3.TabIndex = 8;
             this.button3.Text = "Elegir";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -173,9 +174,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(795, 272);
+            this.pictureBox9.Location = new System.Drawing.Point(778, 272);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(205, 200);
+            this.pictureBox9.Size = new System.Drawing.Size(222, 200);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox9.TabIndex = 15;
             this.pictureBox9.TabStop = false;

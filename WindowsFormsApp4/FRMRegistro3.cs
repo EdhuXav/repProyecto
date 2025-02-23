@@ -32,6 +32,7 @@ namespace WindowsFormsApp4
         private void BTREGISTRO2_Click(object sender, EventArgs e)
         {
             string usuario = TBUsuario.Text;
+            DatosUsuario.Nombre = TBUsuario.Text;
             string contraseña = TBContraseña.Text;
 
             if (usuario == "" && contraseña == "")
