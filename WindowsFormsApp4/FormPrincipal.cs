@@ -14,11 +14,10 @@ namespace WindowsFormsApp4
     public partial class FormPrincipal : Form
     {
 
-
+        private FormPrincipal formPrincipal;
         public FormPrincipal()
         {
             InitializeComponent();
-
             SidePanel.Height = botonHome.Height;
             SidePanel.Top = botonHome.Top;
 
@@ -41,7 +40,6 @@ namespace WindowsFormsApp4
             SidePanel.Height = botonHome.Height;
             SidePanel.Top = botonHome.Top;
             panelContenedor.Hide();
-
         }
 
 
@@ -61,7 +59,7 @@ namespace WindowsFormsApp4
 
         private void botonSaludAlimentaria_Click(object sender, EventArgs e)
         {
-            FRMElegirComida frmElegirComida = new FRMElegirComida(this);  
+            FRMElegirComida frmElegirComida = new FRMElegirComida(this);
 
             panelContenedor.Visible = true;
 
@@ -95,6 +93,27 @@ namespace WindowsFormsApp4
             this.panelContenedor.Controls.Add(fo);
             this.panelContenedor.Tag = fo;
             fo.Show();
+        }
+
+        private void botonNotificaciones_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botonSaludMental_Click(object sender, EventArgs e)
+        {
+            FRMOpcionesSaludMental fRMOpcionesSaludMental = new FRMOpcionesSaludMental();
+            panelContenedor.Visible = true;
+
+            if (this.panelContenedor.Controls.Count > 0)
+            {
+                this.panelContenedor.Controls.RemoveAt(0);
+            }
+            fRMOpcionesSaludMental.TopLevel = false;
+            fRMOpcionesSaludMental.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fRMOpcionesSaludMental);
+            this.panelContenedor.Tag = fRMOpcionesSaludMental;
+            fRMOpcionesSaludMental.Show();
         }
     }
 }

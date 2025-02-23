@@ -18,6 +18,7 @@ namespace WindowsFormsApp4
         public FRMRegistro3(FRMIniciarSesion IniciarSesion2)
         {
             InitializeComponent();
+            button1.BackColor = Color.Transparent;
             IniciarSesion1 = IniciarSesion2;
         }
 
@@ -33,19 +34,25 @@ namespace WindowsFormsApp4
             string usuario = TBUsuario.Text;
             string contraseña = TBContraseña.Text;
 
-                if (usuario == "" || contraseña == "")
-                {
-                    MessageBox.Show("No puede dejar el campo del usario o contraseña vacios");
+            if (usuario == "" && contraseña == "")
+            {
+                MessageBox.Show("Ingrese su usuario y contraseña");
+            }
+            else if (usuario == "")
+            {
+                MessageBox.Show("Ingrese un nombre de usuario");
+            }
+            else if (contraseña == "")
+            {
+                MessageBox.Show("Ingrese su contraseña");
                 }
-                else
-                {
-                    IniciarSesion1.Show();
-                    this.Hide();
-                }
-
-            IniciarSesion1.datos.Add(usuario);
-            IniciarSesion1.datos.Add(contraseña);
-
+            else
+            {
+                IniciarSesion1.datos.Add(usuario);
+                IniciarSesion1.datos2.Add(contraseña);
+                IniciarSesion1.Show();
+                this.Hide();
+            }
         }
 
         private void TBContraseña_TextChanged(object sender, EventArgs e)
@@ -55,7 +62,14 @@ namespace WindowsFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (TBContraseña.PasswordChar == '*')
+            {
+                TBContraseña.PasswordChar = '\0';
+            }
+            else
+            {
+                TBContraseña.PasswordChar = '*';
+            }
         }
     }
 }

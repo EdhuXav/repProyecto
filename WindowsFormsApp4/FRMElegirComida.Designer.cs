@@ -138,6 +138,7 @@
             this.btnAlmuerzo.TabIndex = 8;
             this.btnAlmuerzo.Text = "Elegir";
             this.btnAlmuerzo.UseVisualStyleBackColor = true;
+            this.btnAlmuerzo.Click += new System.EventHandler(this.btnAlmuerzo_Click);
             // 
             // btnCena
             // 

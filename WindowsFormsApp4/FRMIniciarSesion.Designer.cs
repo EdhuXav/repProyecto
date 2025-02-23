@@ -36,6 +36,7 @@
             this.TBContraseña = new System.Windows.Forms.TextBox();
             this.BTIniciar = new System.Windows.Forms.Button();
             this.BTATras = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -119,6 +120,20 @@
             this.BTATras.UseVisualStyleBackColor = false;
             this.BTATras.Click += new System.EventHandler(this.BTATras_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(353, 293);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(34, 22);
+            this.button1.TabIndex = 9;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FRMIniciarSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -126,6 +141,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(795, 444);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BTATras);
             this.Controls.Add(this.BTIniciar);
             this.Controls.Add(this.TBContraseña);
@@ -151,5 +167,6 @@
         private System.Windows.Forms.TextBox TBContraseña;
         private System.Windows.Forms.Button BTIniciar;
         private System.Windows.Forms.Button BTATras;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -12,6 +12,8 @@ namespace WindowsFormsApp4
 {
     public partial class FRMDesayuno : Form
     {
+        
+
         public FRMDesayuno()
         {
             InitializeComponent();
@@ -26,5 +28,15 @@ namespace WindowsFormsApp4
             checkBox8.BackColor = Color.Transparent;
             checkBox9.BackColor = Color.Transparent;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
     }
 }

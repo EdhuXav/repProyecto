@@ -10,14 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class FRMLogros : Form
+    public partial class FRMRompecabezas : Form
     {
-        public FRMLogros()
+        public FRMRompecabezas()
         {
             InitializeComponent();
-            label1.BackColor = Color.Transparent;
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox2.BackColor = Color.Transparent;
         }
     }
 }

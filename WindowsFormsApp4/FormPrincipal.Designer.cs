@@ -156,7 +156,7 @@
             this.botonHome.ForeColor = System.Drawing.Color.White;
             this.botonHome.Image = ((System.Drawing.Image)(resources.GetObject("botonHome.Image")));
             this.botonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.botonHome.Location = new System.Drawing.Point(27, 122);
+            this.botonHome.Location = new System.Drawing.Point(29, 122);
             this.botonHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.botonHome.Name = "botonHome";
             this.botonHome.Size = new System.Drawing.Size(231, 71);
@@ -187,7 +187,7 @@
             this.button5.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(962, 15);
+            this.button5.Location = new System.Drawing.Point(962, 13);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(61, 54);
@@ -202,7 +202,7 @@
             this.button4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(867, 15);
+            this.button4.Location = new System.Drawing.Point(867, 13);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(61, 54);
@@ -217,7 +217,7 @@
             this.botonConfiguracion.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonConfiguracion.ForeColor = System.Drawing.Color.White;
             this.botonConfiguracion.Image = ((System.Drawing.Image)(resources.GetObject("botonConfiguracion.Image")));
-            this.botonConfiguracion.Location = new System.Drawing.Point(628, 16);
+            this.botonConfiguracion.Location = new System.Drawing.Point(628, 15);
             this.botonConfiguracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.botonConfiguracion.Name = "botonConfiguracion";
             this.botonConfiguracion.Size = new System.Drawing.Size(61, 54);
@@ -232,12 +232,13 @@
             this.botonNotificaciones.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonNotificaciones.ForeColor = System.Drawing.Color.White;
             this.botonNotificaciones.Image = ((System.Drawing.Image)(resources.GetObject("botonNotificaciones.Image")));
-            this.botonNotificaciones.Location = new System.Drawing.Point(558, 16);
+            this.botonNotificaciones.Location = new System.Drawing.Point(558, 15);
             this.botonNotificaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.botonNotificaciones.Name = "botonNotificaciones";
             this.botonNotificaciones.Size = new System.Drawing.Size(65, 54);
             this.botonNotificaciones.TabIndex = 4;
             this.botonNotificaciones.UseVisualStyleBackColor = true;
+            this.botonNotificaciones.Click += new System.EventHandler(this.botonNotificaciones_Click);
             // 
             // label1
             // 
@@ -358,6 +359,7 @@
             this.botonSaludMental.TabIndex = 5;
             this.botonSaludMental.Text = "Más...";
             this.botonSaludMental.UseVisualStyleBackColor = false;
+            this.botonSaludMental.Click += new System.EventHandler(this.botonSaludMental_Click);
             // 
             // pictureBox4
             // 

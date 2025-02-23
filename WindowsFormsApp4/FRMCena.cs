@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class FRMAlmuerzo : Form
+    public partial class FRMCena : Form
     {
-        public FRMAlmuerzo()
+        public FRMCena()
         {
             InitializeComponent();
             label1.BackColor = Color.Transparent;
@@ -25,28 +25,11 @@ namespace WindowsFormsApp4
             checkBox7.BackColor = Color.Transparent;
             checkBox8.BackColor = Color.Transparent;
             checkBox9.BackColor = Color.Transparent;
-
-        }
-
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            
-        }
-
-        private void FRMAlmuerzo_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

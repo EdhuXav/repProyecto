@@ -118,10 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAHdElNRQfpAhYFEw5ysRW3AAAA
+        GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAaBJREFUOE/dlDkvBVEYhscWSwhRIVrR
+        EkuJjkZi+QMaQRCFwn8glhCNhI6KoBN/Q0JhCbGWOq3nGefI5c7N7e+bPDcz586859vOJCWvCpiEnvSu
+        iMqhDfphJOB1K/hfGSzCG2haULUwCkdwA49wF/D6Gg5gDV5BUyPNVDecgg8ew1RY6wh0wTQ8wxcsQDVk
+        ahyM4hIGwF0bwZdOArOwDC8wDy2wD3kpu2BUm9DkAmoGTdxkF/bgM+Am1rABtsF3JyDVENyDNckNfwk0
+        603vfkw+wMgqXQiqgXXQQ6/kCs6g3psg03XNyJSFfwfNrOUcVEGU7/q8XunPOfw3tDmmaWSaaaosi//l
+        dvaP4SCY2gYYfpTRWK+YpnIOH8ByRFkmy/WbsrKgFnYHbIZaAQ1jmkammY2Kz9jALfDdvE6PwS1cwCrE
+        0bCbM6CR6TtKputoOWJm58hlyo76gEOrWXtY6wSjdMgddofeqKyla5lyV02MzEjqwDSfwE3Eo+dxPASP
+        p8e0oKyBB91umqb4ceiDYYgfB9f8OBSVnyBNc8eh5JQk34dhXtqVI/HRAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAA/7JJREFUeF7s3XeYXFd5P/A8T1xky3K3bFnuvfeGe++9d0vuNrYhlMAvQAoQWgiE
+        vAAADrwBlbxySQAA/7JJREFUeF7s3XeYXFd5P/A8T1xky3K3bFnuvfeGe++9d0vuNrYhlMAvQAoQWgiE
         ToAAKUDoBEIIJCEQCIRiU7VNvfdiSasu3d+eK+/1rvTuanZ3dvfOzOePzxPivZqZnT333nPe7z3n/MHK
         iZMygP5ob27O2n//e2C4dZyL0TkKAPRTa2vW3tQU33cBqB8tLfF9AAB609aWtTe3ZO0TJsT3FygBATDQ
         Z+0trW5uUCZNAmAAqAr9XIDGIgAGoFKtQl9qiwAYqFy6ybnBQfk0NcXnLABQkRQA6OcCNKBmATAAvchD

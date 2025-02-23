@@ -136,13 +136,16 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(334, 262);
+            this.button1.Location = new System.Drawing.Point(324, 260);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 22);
+            this.button1.Size = new System.Drawing.Size(34, 22);
             this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FRMRegistro3
