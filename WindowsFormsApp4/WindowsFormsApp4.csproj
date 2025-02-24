@@ -63,11 +63,11 @@
     <Compile Include="FRMAlmuerzo.Designer.cs">
       <DependentUpon>FRMAlmuerzo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRMCalculoDesayuno.cs">
+    <Compile Include="FRMCalculos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRMCalculoDesayuno.Designer.cs">
-      <DependentUpon>FRMCalculoDesayuno.cs</DependentUpon>
+    <Compile Include="FRMCalculos.Designer.cs">
+      <DependentUpon>FRMCalculos.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMCena.cs">
       <SubType>Form</SubType>
@@ -173,8 +173,8 @@
     <EmbeddedResource Include="FRMAlmuerzo.resx">
       <DependentUpon>FRMAlmuerzo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRMCalculoDesayuno.resx">
-      <DependentUpon>FRMCalculoDesayuno.cs</DependentUpon>
+    <EmbeddedResource Include="FRMCalculos.resx">
+      <DependentUpon>FRMCalculos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMCena.resx">
       <DependentUpon>FRMCena.cs</DependentUpon>

@@ -60,6 +60,8 @@ namespace WindowsFormsApp4
         {
             FRMElegirComida frmElegirComida = new FRMElegirComida(this);
 
+            FRMOpcionesSaludMental fRMOpcionesSaludMental = new FRMOpcionesSaludMental(this);
+
             panelContenedor.Visible = true;
 
             if (this.panelContenedor.Controls.Count > 0)
@@ -77,7 +79,7 @@ namespace WindowsFormsApp4
         {
     
         }
-        private void AbrirObjetivos(object abrirObjetivos)
+        public void AbrirObjetivos(object abrirObjetivos)
         {
             
             panelContenedor.Visible = true;
@@ -99,20 +101,9 @@ namespace WindowsFormsApp4
 
         }
 
-        private void botonSaludMental_Click(object sender, EventArgs e)
+        public void botonSaludMental_Click(object sender, EventArgs e)
         {
-            FRMOpcionesSaludMental fRMOpcionesSaludMental = new FRMOpcionesSaludMental();
-            panelContenedor.Visible = true;
-
-            if (this.panelContenedor.Controls.Count > 0)
-            {
-                this.panelContenedor.Controls.RemoveAt(0);
-            }
-            fRMOpcionesSaludMental.TopLevel = false;
-            fRMOpcionesSaludMental.Dock = DockStyle.Fill;
-            this.panelContenedor.Controls.Add(fRMOpcionesSaludMental);
-            this.panelContenedor.Tag = fRMOpcionesSaludMental;
-            fRMOpcionesSaludMental.Show();
+            AbrirObjetivos(new FRMOpcionesSaludMental(this));
         }
     }
 }

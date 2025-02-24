@@ -12,9 +12,11 @@ namespace WindowsFormsApp4
 {
     public partial class FRMOpcionesSaludMental : Form
     {
-        public FRMOpcionesSaludMental()
+        private FormPrincipal principal;
+        public FRMOpcionesSaludMental(FormPrincipal principal)
         {
             InitializeComponent();
+            this.principal = principal;
             label1.BackColor = Color.Transparent;
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
@@ -36,10 +38,10 @@ namespace WindowsFormsApp4
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FRMRompe fRMRompe = new FRMRompe();
-            fRMRompe.Show();
-
-            
+            if (principal != null)
+            {
+                principal.AbrirObjetivos(new FRMRompe(principal));
+            }
         }
     }
 }

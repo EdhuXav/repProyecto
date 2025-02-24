@@ -11,53 +11,64 @@
     namespace WindowsFormsApp4
     {
     public partial class FRMElegirComida : Form
-    {
-        private FormPrincipal formPrincipal;
-        public FRMElegirComida(FormPrincipal formPrincipalRef)
+    { 
+        private FormPrincipal principal;
+        public FRMElegirComida(FormPrincipal principal)
         {
             InitializeComponent();
-            formPrincipal = formPrincipalRef;
+            this.principal = principal;
             label1.BackColor = Color.Transparent;
             label2.BackColor = Color.Transparent;
             label3.BackColor = Color.Transparent;
             pictureBox4.BackColor = Color.Transparent;
             pictureBox5.BackColor = Color.Transparent;
+            this.principal = principal;
         }
 
         private void btnCena_Click(object sender, EventArgs e)
         {
-            AbrirObjetivos(new FRMCena());
+            if (principal != null)
+            {
+                principal.AbrirObjetivos(new FRMCena(principal));
+            }
         }
 
 
 
         private void btnDesayuno_Click(object sender, EventArgs e)
         {
-            AbrirObjetivos(new FRMDesayuno(formPrincipal));
+            if (principal != null)
+            {
+                principal.AbrirObjetivos(new FRMDesayuno(principal));
+            }
         }
 
         private void btnAlmuerzo_Click(object sender, EventArgs e)
         {
-            AbrirObjetivos(new FRMAlmuerzo());
+            if (principal != null)
+            {
+                principal.AbrirObjetivos(new FRMAlmuerzo(principal));
+            }
         }
 
-        private void AbrirObjetivos(object abrirObjetivos)
+        private void AbrirObjetivos(Form abrirObjetivos)
         {
-            formPrincipal.panelContenedor.Visible = true;
+            if (principal == null) return; // Asegurar que principal no sea nulo
 
-            if (formPrincipal.panelContenedor.Controls.Count > 0)
+            principal.panelContenedor.Visible = true;
+
+            if (principal.panelContenedor.Controls.Count > 0)
             {
-                formPrincipal.panelContenedor.Controls.RemoveAt(0);
+                principal.panelContenedor.Controls.RemoveAt(0);
             }
 
-            Form fo = abrirObjetivos as Form;
-            fo.TopLevel = false;
-            fo.Dock = DockStyle.Fill;
-            this.formPrincipal.panelContenedor.Controls.Add(fo);
-            this.formPrincipal.panelContenedor.Tag = fo;
-            fo.Show();
+            abrirObjetivos.TopLevel = false;
+            abrirObjetivos.Dock = DockStyle.Fill;
+            principal.panelContenedor.Controls.Add(abrirObjetivos);
+            principal.panelContenedor.Tag = abrirObjetivos;
+            abrirObjetivos.Show();
         }
 
- 
+
     }
     }

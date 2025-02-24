@@ -22,11 +22,17 @@ namespace WindowsFormsApp4
         int movimientos = 0;
         Timer cronometro = new Timer();
         int segundos = 0;
-        public FRMRompe()
+
+        private FormPrincipal principal;
+
+        public FRMRompe(FormPrincipal principal)
         {
             InitializeComponent();
+            label1.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
             cronometro.Interval = 1000; // 1 segundo
             cronometro.Tick += Cronometro_Tick;
+            this.principal = principal;
         }
 
         private void Cronometro_Tick(object sender, EventArgs e)
@@ -178,6 +184,14 @@ namespace WindowsFormsApp4
             {
                 label2.Text = "¡Juego Completado!";
                 cronometro.Stop();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (principal != null)
+            {
+                principal.AbrirObjetivos(new FRMOpcionesSaludMental(principal));
             }
         }
     }
