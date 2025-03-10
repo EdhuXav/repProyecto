@@ -27,9 +27,13 @@
 
         private void btnCena_Click(object sender, EventArgs e)
         {
-            if (principal != null)
+            if (DatosUsuario.x == true || DatosUsuario.a == true || DatosUsuario.b == true)
             {
                 principal.AbrirObjetivos(new FRMCena(principal));
+            }
+            else if (DatosUsuario.y == true || DatosUsuario.c == true)
+            {
+                principal.AbrirObjetivos(new FRMAumentarMasaCen(principal));
             }
         }
 
@@ -37,38 +41,25 @@
 
         private void btnDesayuno_Click(object sender, EventArgs e)
         {
-            if (principal != null)
+            if (DatosUsuario.x == true ||DatosUsuario.a == true ||DatosUsuario.b == true)
             {
                 principal.AbrirObjetivos(new FRMDesayuno(principal));
+            }
+            else if (DatosUsuario.y ||DatosUsuario.c == true)
+            {
+                principal.AbrirObjetivos(new FRMAumentarMasaD(principal));
             }
         }
 
         private void btnAlmuerzo_Click(object sender, EventArgs e)
         {
-            if (principal != null)
+            if (DatosUsuario.x == true || DatosUsuario.a == true || DatosUsuario.b == true)
             {
                 principal.AbrirObjetivos(new FRMAlmuerzo(principal));
             }
-        }
-
-        private void AbrirObjetivos(Form abrirObjetivos)
-        {
-            if (principal == null) return; // Asegurar que principal no sea nulo
-
-            principal.panelContenedor.Visible = true;
-
-            if (principal.panelContenedor.Controls.Count > 0)
-            {
-                principal.panelContenedor.Controls.RemoveAt(0);
+            else if (DatosUsuario.y == true || DatosUsuario.c == true)
+                principal.AbrirObjetivos(new FRMAumentarMasaAl(principal));
             }
-
-            abrirObjetivos.TopLevel = false;
-            abrirObjetivos.Dock = DockStyle.Fill;
-            principal.panelContenedor.Controls.Add(abrirObjetivos);
-            principal.panelContenedor.Tag = abrirObjetivos;
-            abrirObjetivos.Show();
         }
-
-
     }
-    }
+    

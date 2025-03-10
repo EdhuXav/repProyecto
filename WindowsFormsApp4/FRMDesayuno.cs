@@ -49,17 +49,82 @@ namespace WindowsFormsApp4
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (principal != null)
-            {
-                principal.AbrirObjetivos(new FRMElegirComida(principal)); 
-            }
+            principal.AbrirObjetivos(new FRMElegirComida(principal)); 
         }
 
-    
+        private void button1_Click(object sender, EventArgs e)
+        {
+            bool x = true;
+            try
+            {
+                if (checkBox1.Checked)
+                {
+                    CalculosComida.sumaProetina += CalculosComida.proteinas1 * double.Parse(textBox1.Text);
+                    CalculosComida.sumaCarbohidratos += CalculosComida.carbohidratos1 * double.Parse(textBox1.Text);
+                    CalculosComida.sumaCalorias += CalculosComida.calorias1 * double.Parse(textBox1.Text);
+                }
 
+                if (checkBox2.Checked)
+                {
+                    CalculosComida.sumaProetina += CalculosComida.proteinas2 * int.Parse(textBox2.Text);
+                    CalculosComida.sumaCarbohidratos += CalculosComida.carbohidratos2 * int.Parse(textBox2.Text);
+                    CalculosComida.sumaCalorias += CalculosComida.calorias2 * int.Parse(textBox2.Text);
+                }
 
+                if (checkBox3.Checked)
+                {
+                    CalculosComida.sumaProetina += CalculosComida.proteinas3 * int.Parse(textBox3.Text);
+                    CalculosComida.sumaCarbohidratos += CalculosComida.carbohidratos3 * int.Parse(textBox3.Text);
+                    CalculosComida.sumaCalorias += CalculosComida.calorias3 * int.Parse(textBox3.Text);
+                }
 
+                if (checkBox4.Checked)
+                {
+                    CalculosComida.sumaProetina += CalculosComida.proteinas4 * int.Parse(textBox4.Text);
+                    CalculosComida.sumaCarbohidratos += CalculosComida.carbohidratos4 * int.Parse(textBox4.Text);
+                    CalculosComida.sumaCalorias += CalculosComida.calorias4 * int.Parse(textBox4.Text);
+                }
 
+                if (checkBox5.Checked)
+                {
+                    CalculosComida.sumaProetina += CalculosComida.proteinas5 * int.Parse(textBox5.Text);
+                    CalculosComida.sumaCarbohidratos += CalculosComida.carbohidratos5 * int.Parse(textBox5.Text);
+                    CalculosComida.sumaCalorias += CalculosComida.calorias5 * int.Parse(textBox5.Text);
+                }
+                if (checkBox6.Checked)
+                {
+                    CalculosComida.sumaProetina += CalculosComida.proteinas6 * int.Parse(textBox6.Text);
+                    CalculosComida.sumaCarbohidratos += CalculosComida.carbohidratos6 * int.Parse(textBox6.Text);
+                    CalculosComida.sumaCalorias += CalculosComida.calorias6 * int.Parse(textBox6.Text);
+                }
+                if (checkBox7.Checked)
+                {
+                    CalculosComida.sumaProetina += CalculosComida.proteinas7 * int.Parse(textBox7.Text);
+                    CalculosComida.sumaCarbohidratos += CalculosComida.carbohidratos7 * int.Parse(textBox7.Text);
+                    CalculosComida.sumaCalorias += CalculosComida.calorias7 * int.Parse(textBox7.Text);
+                }
+                if (checkBox8.Checked)
+                {
+                    CalculosComida.sumaProetina += CalculosComida.proteinas8 * int.Parse(textBox8.Text);
+                    CalculosComida.sumaCarbohidratos += CalculosComida.carbohidratos8 * int.Parse(textBox8.Text);
+                    CalculosComida.sumaCalorias += CalculosComida.calorias8 * int.Parse(textBox8.Text);
+                }
+                if (checkBox9.Checked)
+                {
+                    CalculosComida.sumaProetina += CalculosComida.proteinas9 * int.Parse(textBox9.Text);
+                    CalculosComida.sumaCarbohidratos += CalculosComida.carbohidratos9 * int.Parse(textBox9.Text);
+                    CalculosComida.sumaCalorias += CalculosComida.calorias9 * int.Parse(textBox9.Text);
+                }
+            } catch (FormatException ex)
+            {
+                MessageBox.Show("Ingrese la cantidad que va a consumir");
+                x = false;
+            }
 
+            if (x == true)
+            {
+                principal.AbrirObjetivos(new FRMCalculoDesayuno(principal));
+            }
+        }
     }
 }

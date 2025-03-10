@@ -43,5 +43,15 @@ namespace WindowsFormsApp4
                 principal.AbrirObjetivos(new FRMRompe(principal));
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            principal.AbrirObjetivos(new FRMEmociones(principal));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            principal.AbrirObjetivos(new FRMRrespiracion());
+        }
     }
 }

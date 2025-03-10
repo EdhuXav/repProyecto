@@ -16,8 +16,14 @@ namespace WindowsFormsApp4
         {
             InitializeComponent();
             label1.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
             pictureBox1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
+        }
+
+        private void FRMLogros_Load(object sender, EventArgs e)
+        {
+            label2.Text = DatosUsuario.logro1 + "\n" + DatosUsuario.logro2 + "\n" + DatosUsuario.logro3;
         }
     }
 }

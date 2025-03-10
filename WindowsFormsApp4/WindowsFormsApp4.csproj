@@ -50,6 +50,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alarma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alarma.Designer.cs">
+      <DependentUpon>Alarma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculosComida.cs" />
+    <Compile Include="CalculosComida2.cs" />
     <Compile Include="DatosUsuario.cs" />
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -63,6 +71,30 @@
     <Compile Include="FRMAlmuerzo.Designer.cs">
       <DependentUpon>FRMAlmuerzo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMAumentarMasaAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAumentarMasaAl.Designer.cs">
+      <DependentUpon>FRMAumentarMasaAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAumentarMasaCen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAumentarMasaCen.Designer.cs">
+      <DependentUpon>FRMAumentarMasaCen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAumentarMasaD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAumentarMasaD.Designer.cs">
+      <DependentUpon>FRMAumentarMasaD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMBueno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMBueno.Designer.cs">
+      <DependentUpon>FRMBueno.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMCalculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +107,7 @@
     <Compile Include="FRMCena.Designer.cs">
       <DependentUpon>FRMCena.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMContadorRespuestas.cs" />
     <Compile Include="FRMDesayuno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,11 +120,29 @@
     <Compile Include="FRMElegirComida.Designer.cs">
       <DependentUpon>FRMElegirComida.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMEmociones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMEmociones.Designer.cs">
+      <DependentUpon>FRMEmociones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMExcelente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMExcelente.Designer.cs">
+      <DependentUpon>FRMExcelente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMLogros.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRMLogros.Designer.cs">
       <DependentUpon>FRMLogros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMMalo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMMalo.Designer.cs">
+      <DependentUpon>FRMMalo.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMObjetivos.cs">
       <SubType>Form</SubType>
@@ -117,12 +168,55 @@
     <Compile Include="FRMPerfil.Designer.cs">
       <DependentUpon>FRMPerfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMPregunta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPregunta1.Designer.cs">
+      <DependentUpon>FRMPregunta1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPregunta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPregunta2.Designer.cs">
+      <DependentUpon>FRMPregunta2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPregunta3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPregunta3.Designer.cs">
+      <DependentUpon>FRMPregunta3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPregunta4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPregunta4.Designer.cs">
+      <DependentUpon>FRMPregunta4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPregunta5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPregunta5.Designer.cs">
+      <DependentUpon>FRMPregunta5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPuente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPuente.Designer.cs">
+      <DependentUpon>FRMPuente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMRompe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRMRompe.Designer.cs">
       <DependentUpon>FRMRompe.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMRrespiracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRrespiracion.Designer.cs">
+      <DependentUpon>FRMRrespiracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preguntas.cs" />
     <Compile Include="Proyecto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,11 +261,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Alarma.resx">
+      <DependentUpon>Alarma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMAlmuerzo.resx">
       <DependentUpon>FRMAlmuerzo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAumentarMasaAl.resx">
+      <DependentUpon>FRMAumentarMasaAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAumentarMasaCen.resx">
+      <DependentUpon>FRMAumentarMasaCen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAumentarMasaD.resx">
+      <DependentUpon>FRMAumentarMasaD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMBueno.resx">
+      <DependentUpon>FRMBueno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMCalculos.resx">
       <DependentUpon>FRMCalculos.cs</DependentUpon>
@@ -185,8 +294,17 @@
     <EmbeddedResource Include="FRMElegirComida.resx">
       <DependentUpon>FRMElegirComida.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMEmociones.resx">
+      <DependentUpon>FRMEmociones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMExcelente.resx">
+      <DependentUpon>FRMExcelente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMLogros.resx">
       <DependentUpon>FRMLogros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMMalo.resx">
+      <DependentUpon>FRMMalo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMObjetivos.resx">
       <DependentUpon>FRMObjetivos.cs</DependentUpon>
@@ -200,8 +318,29 @@
     <EmbeddedResource Include="FRMPerfil.resx">
       <DependentUpon>FRMPerfil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMPregunta1.resx">
+      <DependentUpon>FRMPregunta1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPregunta2.resx">
+      <DependentUpon>FRMPregunta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPregunta3.resx">
+      <DependentUpon>FRMPregunta3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPregunta4.resx">
+      <DependentUpon>FRMPregunta4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPregunta5.resx">
+      <DependentUpon>FRMPregunta5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPuente.resx">
+      <DependentUpon>FRMPuente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMRompe.resx">
       <DependentUpon>FRMRompe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMRrespiracion.resx">
+      <DependentUpon>FRMRrespiracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Proyecto.resx">
       <DependentUpon>Proyecto.cs</DependentUpon>
@@ -232,6 +371,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -245,6 +385,85 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MediaPlayer">
+      <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMLSS">
+      <Guid>{C21E9CE5-B317-463B-A1B1-B5E36EED59D0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPDXMLib">
+      <Guid>{73F0DD5C-D071-46B6-A8BF-897C84EAAC49}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-02-21 at 12.11.07 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-02-27 at 3.05.40 PM %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-03-09 at 5.19.17 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-03-09 at 5.19.17 PM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-03-09 at 11.02.35 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-03-09 at 11.02.35 PM1.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

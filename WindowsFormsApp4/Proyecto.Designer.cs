@@ -36,12 +36,12 @@
             // 
             // BTIniciarSesion
             // 
-            this.BTIniciarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BTIniciarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTIniciarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BTIniciarSesion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTIniciarSesion.Location = new System.Drawing.Point(366, 152);
+            this.BTIniciarSesion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTIniciarSesion.Location = new System.Drawing.Point(487, 150);
             this.BTIniciarSesion.Name = "BTIniciarSesion";
-            this.BTIniciarSesion.Size = new System.Drawing.Size(148, 56);
+            this.BTIniciarSesion.Size = new System.Drawing.Size(250, 75);
             this.BTIniciarSesion.TabIndex = 0;
             this.BTIniciarSesion.Text = "Iniciar Sesión";
             this.BTIniciarSesion.UseVisualStyleBackColor = false;
@@ -49,11 +49,11 @@
             // 
             // BTRegistrar
             // 
-            this.BTRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BTRegistrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTRegistrar.Location = new System.Drawing.Point(366, 257);
+            this.BTRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BTRegistrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTRegistrar.Location = new System.Drawing.Point(487, 320);
             this.BTRegistrar.Name = "BTRegistrar";
-            this.BTRegistrar.Size = new System.Drawing.Size(148, 51);
+            this.BTRegistrar.Size = new System.Drawing.Size(250, 77);
             this.BTRegistrar.TabIndex = 1;
             this.BTRegistrar.Text = "Registrarse";
             this.BTRegistrar.UseVisualStyleBackColor = false;
@@ -63,10 +63,10 @@
             // 
             this.letrao.AutoSize = true;
             this.letrao.BackColor = System.Drawing.Color.Transparent;
-            this.letrao.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.letrao.Location = new System.Drawing.Point(431, 220);
+            this.letrao.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.letrao.Location = new System.Drawing.Point(603, 261);
             this.letrao.Name = "letrao";
-            this.letrao.Size = new System.Drawing.Size(21, 18);
+            this.letrao.Size = new System.Drawing.Size(25, 22);
             this.letrao.TabIndex = 2;
             this.letrao.Text = "O";
             // 
@@ -77,7 +77,7 @@
             this.BackColor = System.Drawing.Color.LightCoral;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(596, 361);
+            this.ClientSize = new System.Drawing.Size(896, 560);
             this.Controls.Add(this.letrao);
             this.Controls.Add(this.BTRegistrar);
             this.Controls.Add(this.BTIniciarSesion);

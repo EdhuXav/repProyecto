@@ -13,5 +13,37 @@ namespace WindowsFormsApp4
         public static string Altura { get; set; }
         public static string Peso { get; set; }
         public static string Genero { get; set; }
+
+
+
+        public static string usuario { get; set; }
+        public static string contraseña { get; set; }
+
+
+
+        public static bool x { get; set; } = false;
+        public static bool y { get; set; } = false;
+        public static bool a { get; set; } = false;
+        public static bool b { get; set; } = false;
+        public static bool c { get; set; } = false;
+
+
+        public static string opc1 { get; set; } = "Perder peso";
+        public static string opc2 { get; set; } = "Aumentar peso";
+        public static string opc3 { get; set; } = "Perder Peso y Alimentación Sana";
+        public static string opc4 { get; set; } = "Aumentar Peso y Alimentación Sana";
+        public static string opc5 { get; set; } = "Mantener Peso";
+
+
+        public static string PerderPeso { get; set; }
+        public static string MantenerPeso { get; set; }
+        public static string AumentarPeso { get; set; }
+        public static string ManejoEstres { get; set; }
+        public static string AlimentacionSana { get; set; }
+
+
+        public static string logro1 { get; set; }
+        public static string logro2 { get; set; }
+        public static string logro3 { get; set; } 
     }
 }

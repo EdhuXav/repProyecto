@@ -387,6 +387,7 @@
             this.button1.TabIndex = 87;
             this.button1.Text = "Confirmar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox19
             // 
@@ -426,7 +427,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(104, 377);
+            this.textBox5.Location = new System.Drawing.Point(439, 388);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(38, 22);
             this.textBox5.TabIndex = 134;
@@ -449,7 +450,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(104, 544);
+            this.textBox1.Location = new System.Drawing.Point(104, 197);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(38, 22);
             this.textBox1.TabIndex = 137;
@@ -495,7 +496,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(439, 386);
+            this.textBox3.Location = new System.Drawing.Point(780, 196);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(38, 22);
             this.textBox3.TabIndex = 143;
@@ -518,7 +519,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(104, 195);
+            this.textBox4.Location = new System.Drawing.Point(105, 377);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(38, 22);
             this.textBox4.TabIndex = 146;
@@ -541,7 +542,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(440, 545);
+            this.textBox6.Location = new System.Drawing.Point(780, 383);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(38, 22);
             this.textBox6.TabIndex = 149;
@@ -564,7 +565,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(780, 194);
+            this.textBox7.Location = new System.Drawing.Point(106, 546);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(38, 22);
             this.textBox7.TabIndex = 152;
@@ -575,7 +576,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(25, 23);
             this.label16.TabIndex = 157;
-            this.label16.Text = "g.";
+            this.label16.Text = "u.";
             // 
             // label17
             // 
@@ -587,7 +588,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(780, 383);
+            this.textBox8.Location = new System.Drawing.Point(439, 545);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(38, 22);
             this.textBox8.TabIndex = 155;
@@ -610,7 +611,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(779, 545);
+            this.textBox9.Location = new System.Drawing.Point(780, 546);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(38, 22);
             this.textBox9.TabIndex = 158;

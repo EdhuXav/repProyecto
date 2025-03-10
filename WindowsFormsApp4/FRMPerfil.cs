@@ -36,6 +36,7 @@ namespace WindowsFormsApp4
             label11.BackColor = Color.Transparent;
             label12.BackColor = Color.Transparent;
             label13.BackColor = Color.Transparent;
+            label14.BackColor = Color.Transparent;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

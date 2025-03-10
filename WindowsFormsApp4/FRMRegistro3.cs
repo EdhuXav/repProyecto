@@ -31,26 +31,26 @@ namespace WindowsFormsApp4
 
         private void BTREGISTRO2_Click(object sender, EventArgs e)
         {
-            string usuario = TBUsuario.Text;
-            DatosUsuario.Nombre = TBUsuario.Text;
-            string contraseña = TBContraseña.Text;
 
-            if (usuario == "" && contraseña == "")
+            DatosUsuario.usuario = TBUsuario.Text;
+            DatosUsuario.contraseña = TBContraseña.Text;
+
+            if (DatosUsuario.usuario == "" && DatosUsuario.contraseña == "")
             {
                 MessageBox.Show("Ingrese su usuario y contraseña");
             }
-            else if (usuario == "")
+            else if (DatosUsuario.usuario == "")
             {
                 MessageBox.Show("Ingrese un nombre de usuario");
             }
-            else if (contraseña == "")
+            else if (DatosUsuario.contraseña == "")
             {
                 MessageBox.Show("Ingrese su contraseña");
-                }
+            }
             else
             {
-                IniciarSesion1.datos.Add(usuario);
-                IniciarSesion1.datos2.Add(contraseña);
+                IniciarSesion1.datos.Add(DatosUsuario.usuario);
+                IniciarSesion1.datos2.Add(DatosUsuario.contraseña);
                 IniciarSesion1.Show();
                 this.Hide();
             }

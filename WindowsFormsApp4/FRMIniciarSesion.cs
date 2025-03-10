@@ -26,22 +26,16 @@ namespace WindowsFormsApp4
 
         private void BTSGuiente_Click(object sender, EventArgs e)
         {
-
-            foreach (string s in datos)
-            {
-                foreach (string s2 in datos2)
-                {
-                    if (s != Usuario.Text && s2 != TBContraseña.Text)
+                    if (DatosUsuario.usuario != Usuario.Text && DatosUsuario.contraseña != TBContraseña.Text)
                     {
                         MessageBox.Show("Usuario y contraseña no coinciden");
-                        break;
                     }
-                    else if (s != Usuario.Text)
+                    else if (DatosUsuario.usuario != Usuario.Text)
                     {
                         MessageBox.Show("Usuarios no coinciden");
                         x = false;
                     }
-                    else if (s2 != TBContraseña.Text)
+                    else if (DatosUsuario.contraseña != TBContraseña.Text)
                     {
                         MessageBox.Show("Contraseñas no coinciden");
                         y = false;
@@ -51,8 +45,7 @@ namespace WindowsFormsApp4
                         x = true;
                         y = true;
                     }
-                }
-            }
+
             if (x == true && y == true)
             {
                 MessageBox.Show("Ha iniciado sesión correctamente");
@@ -60,6 +53,7 @@ namespace WindowsFormsApp4
                 FormPrincipal.Show();
                 this.Hide();
                 FormPrincipal.panelContenedor.Hide();
+                
                 
             }
         }

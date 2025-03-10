@@ -427,6 +427,7 @@
             this.button1.TabIndex = 117;
             this.button1.Text = "Confirmar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label11
             // 
@@ -469,7 +470,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(108, 362);
+            this.textBox2.Location = new System.Drawing.Point(450, 189);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(38, 22);
             this.textBox2.TabIndex = 122;
@@ -492,7 +493,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(108, 544);
+            this.textBox3.Location = new System.Drawing.Point(786, 189);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(38, 22);
             this.textBox3.TabIndex = 125;
@@ -515,7 +516,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(446, 188);
+            this.textBox4.Location = new System.Drawing.Point(110, 364);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(38, 22);
             this.textBox4.TabIndex = 128;
@@ -561,7 +562,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(446, 544);
+            this.textBox6.Location = new System.Drawing.Point(785, 364);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(38, 22);
             this.textBox6.TabIndex = 134;
@@ -584,7 +585,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(785, 187);
+            this.textBox7.Location = new System.Drawing.Point(108, 546);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(38, 22);
             this.textBox7.TabIndex = 137;
@@ -607,7 +608,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(785, 362);
+            this.textBox8.Location = new System.Drawing.Point(448, 545);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(38, 22);
             this.textBox8.TabIndex = 140;
