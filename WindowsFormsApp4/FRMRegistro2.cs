@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp4
@@ -15,11 +8,36 @@ namespace WindowsFormsApp4
         public FRMRegistro2()
         {
             InitializeComponent();
+            this.Load += FRMRegistro2_Load; // Asignar el evento Load al formulario
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void FRMRegistro2_Load(object sender, EventArgs e)
         {
+            // Asignar el evento CheckedChanged a todos los CheckBox dentro del formulario
+            foreach (Control control in this.Controls)
+            {
+                if (control is CheckBox checkBox)
+                {
+                    checkBox.CheckedChanged += checkBox_CheckedChanged;
+                }
+            }
+        }
 
+        private void checkBox_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox seleccionado = sender as CheckBox;
+
+            if (seleccionado.Checked)
+            {
+                // Desmarcar los otros CheckBox
+                foreach (Control control in this.Controls)
+                {
+                    if (control is CheckBox checkBox && checkBox != seleccionado)
+                    {
+                        checkBox.Checked = false;
+                    }
+                }
+            }
         }
 
         private void BTSiguientee_Click(object sender, EventArgs e)
@@ -37,3 +55,4 @@ namespace WindowsFormsApp4
         }
     }
 }
+

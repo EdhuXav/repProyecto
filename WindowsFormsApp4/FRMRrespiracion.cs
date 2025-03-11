@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
     public partial class FRMRrespiracion : Form
     {
+        private FormPrincipal principal;
         int contador = 0; // Contador para las fases
         int tiempoTranscurrido = 0; // Tiempo transcurrido en la fase actual
         int segundosRestantes = 3; // Inicializa en 3 segundos
@@ -13,11 +15,12 @@ namespace WindowsFormsApp4
         string[] mensajes = { "Inhala", "Mantén la respiración", "Exhala" }; // Mensajes de cada fase
         Color[] colores = { Color.Red, Color.Yellow, Color.Green }; // Colores de cada fase
 
-        public FRMRrespiracion()
+        public FRMRrespiracion(FormPrincipal principal)
         {
             InitializeComponent();
             timer1.Interval = 1000; // Intervalo de 1 segundo
             timer1.Enabled = false;
+            this.principal = principal;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -75,6 +78,11 @@ namespace WindowsFormsApp4
         private void FRMRrespiracion_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            principal.AbrirObjetivos(new FRMOpcionesSaludMental(principal));
         }
     }
 }

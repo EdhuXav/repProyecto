@@ -63,6 +63,26 @@ namespace WindowsFormsApp4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap check__1_ {
+            get {
+                object obj = ResourceManager.GetObject("check (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap check__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("check (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap information__1_ {
             get {
                 object obj = ResourceManager.GetObject("information (1)", resourceCulture);

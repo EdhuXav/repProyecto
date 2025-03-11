@@ -216,6 +216,12 @@
     <Compile Include="FRMRrespiracion.Designer.cs">
       <DependentUpon>FRMRrespiracion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pregunta.Designer.cs">
+      <DependentUpon>Pregunta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Preguntas.cs" />
     <Compile Include="Proyecto.cs">
       <SubType>Form</SubType>
@@ -342,6 +348,9 @@
     <EmbeddedResource Include="FRMRrespiracion.resx">
       <DependentUpon>FRMRrespiracion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pregunta.resx">
+      <DependentUpon>Pregunta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Proyecto.resx">
       <DependentUpon>Proyecto.cs</DependentUpon>
     </EmbeddedResource>
@@ -464,6 +473,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2025-03-09 at 11.02.35 PM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

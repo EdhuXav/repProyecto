@@ -102,9 +102,9 @@ namespace WindowsFormsApp4
             // Si hay notificación, mostrar panel11
             if (!string.IsNullOrEmpty(lbNotificacion.Text))
             {
-                panel11.Visible = true;  // 🔹 Mostrar "Es hora de hacer ejercicio"
-                panel12.Visible = false; // 🔹 Ocultar "No hay notificaciones"
-                lbNotificacion.Text = ""; // 🔹 Borrar el "1" al ver la notificación
+                panel11.Visible = true;  
+                panel12.Visible = false; 
+                lbNotificacion.Text = "";
                 lbNotificacion.Visible = false;
             }
             else
@@ -134,6 +134,8 @@ namespace WindowsFormsApp4
 
         private void botonConfiguracion_Click(object sender, EventArgs e)
         {
+            panel14.Visible = !panel14.Visible;
+            panel14.BringToFront();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -144,7 +146,7 @@ namespace WindowsFormsApp4
 
         private void button7_Click(object sender, EventArgs e)
         {
-            var resultado = MessageBox.Show("¿Estás seguro que deseas salir del programa?", "Salir del programa", MessageBoxButtons.YesNo);
+            var resultado = MessageBox.Show("¿Estás seguro que deseas salir del programa?", "Salir del programa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (resultado == DialogResult.Yes)
             {
@@ -159,9 +161,18 @@ namespace WindowsFormsApp4
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Proyecto proyecto = new Proyecto();
-            this.Hide();
-            proyecto.Show();
+            var opcn = MessageBox.Show("¿Estás seguro que deseas cerrar cesión?", "Cerrar Cesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (opcn == DialogResult.Yes)
+            {
+                Proyecto proyecto = new Proyecto();
+                this.Hide();
+                proyecto.Show();
+            }
+            else
+            {
+                FormPrincipal formPrincipal = new FormPrincipal();
+                formPrincipal.BringToFront();
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -192,9 +203,19 @@ namespace WindowsFormsApp4
             panel10.BringToFront();
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.facebook.com/profile.php?id=61573776968415");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            AbrirObjetivos(new Pregunta());
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

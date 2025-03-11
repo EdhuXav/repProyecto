@@ -51,7 +51,7 @@ namespace WindowsFormsApp4
 
         private void button2_Click(object sender, EventArgs e)
         {
-            principal.AbrirObjetivos(new FRMRrespiracion());
+            principal.AbrirObjetivos(new FRMRrespiracion(principal));
         }
     }
 }

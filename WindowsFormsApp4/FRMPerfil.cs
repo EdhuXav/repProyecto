@@ -60,7 +60,7 @@ namespace WindowsFormsApp4
         private void FRMPerfil_Load(object sender, EventArgs e)
         {
             // Cargar datos almacenados en la clase Sesion
-            label7.Text = DatosUsuario.Nombre; // Si tienes un campo de nombre
+            label7.Text = DatosUsuario.usuario; // Si tienes un campo de nombre
             label10.Text = DatosUsuario.Edad;
             label11.Text = DatosUsuario.Altura;
             label12.Text = DatosUsuario.Peso;

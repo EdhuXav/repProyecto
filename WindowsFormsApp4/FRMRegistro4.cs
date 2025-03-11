@@ -51,17 +51,17 @@ namespace WindowsFormsApp4
                 DatosUsuario.Peso = textBox2.Text;
                 DatosUsuario.Genero = checkBox1.Checked ? "Hombre" : checkBox2.Checked ? "Mujer" : "No especificado";
 
-                if (estatura > 280)
+                if (estatura > 280 || estatura < 70)
                 {
                     MessageBox.Show("Ingrese una estatura real");
                     x = false;
                 }
-                if (peso > 300)
+                if (peso > 300 || peso < 30)
                 {
                     MessageBox.Show("Ingrese un peso real");
                     y = false;
                 }
-                if (edad > 120)
+                if (edad > 120 || edad < 5)
                 {
                     MessageBox.Show("Ingrese una edad real");
                     z = false;
@@ -83,6 +83,11 @@ namespace WindowsFormsApp4
             {
                 MessageBox.Show($"Ocurrió un error: {ex.Message}");
             }
+
+        }
+
+        private void FRMRegistro4_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -29,22 +29,22 @@ namespace WindowsFormsApp4
 
             if (CBMantenerPeso.Checked && CBPerder.Checked && CBAumentar.Checked)
             {
-                MessageBox.Show("No puede el objetivo de manetener peso, aumentar peso y perder peso a la vez");
+                MessageBox.Show("No puede el objetivo de manetener peso, aumentar peso y perder peso a la vez", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 x = false;
             }
             else if (CBPerder.Checked && CBAumentar.Checked)
             {
-                MessageBox.Show("No puede el objetivo de aumentar peso y perder peso a la vez");
+                MessageBox.Show("No puede el objetivo de aumentar peso y perder peso a la vez", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 x = false;
             }
             else if (CBMantenerPeso.Checked && CBAumentar.Checked)
             {
-                MessageBox.Show("No puede el objetivo de manetener peso y aumentar peso a la vez");
+                MessageBox.Show("No puede el objetivo de manetener peso y aumentar peso a la vez", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 x = false;
             }
             else if (CBMantenerPeso.Checked && CBPerder.Checked)
             {
-                MessageBox.Show("No puede el objetivo de mantener peso y perder peso a la vez");
+                MessageBox.Show("No puede el objetivo de mantener peso y perder peso a la vez", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 x = false;
             }
 
@@ -71,7 +71,7 @@ namespace WindowsFormsApp4
             }
             else
             {
-                MessageBox.Show("Seleccione al menos un objetivo");
+                MessageBox.Show("Seleccione al menos un objetivo", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 x = false;
             }
 
