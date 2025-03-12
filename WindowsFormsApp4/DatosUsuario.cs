@@ -8,11 +8,17 @@ namespace WindowsFormsApp4
 {
     public static class DatosUsuario
     {
-        public static string Nombre { get; set; }  // Nombre del usuario (si es necesario)
+        public static string Nombre { get; set; }  
         public static string Edad { get; set; }
         public static string Altura { get; set; }
         public static string Peso { get; set; }
         public static string Genero { get; set; }
+
+        public static string Nombre2 { get; set; }  
+        public static string Edad2 { get; set; }
+        public static string Altura2 { get; set; }
+        public static string Peso2 { get; set; }
+        public static string Genero2 { get; set; }
 
 
 
@@ -26,6 +32,7 @@ namespace WindowsFormsApp4
         public static bool a { get; set; } = false;
         public static bool b { get; set; } = false;
         public static bool c { get; set; } = false;
+        public static bool conf { get; set; } = false;
 
 
         public static string opc1 { get; set; } = "Perder peso";
@@ -33,6 +40,7 @@ namespace WindowsFormsApp4
         public static string opc3 { get; set; } = "Perder Peso y Alimentación Sana";
         public static string opc4 { get; set; } = "Aumentar Peso y Alimentación Sana";
         public static string opc5 { get; set; } = "Mantener Peso";
+        
 
 
         public static string PerderPeso { get; set; }

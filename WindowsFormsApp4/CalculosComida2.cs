@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp4
 {
-    internal class CalculosComida2
+    public static class CalculosComida2
     {
         public static double proteinas1 { get; set; } = 0.10;
         public static double carbohidratos1 { get; set; } = 0.15;

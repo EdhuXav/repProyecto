@@ -13,7 +13,7 @@ namespace WindowsFormsApp4
 {
     public partial class FormPrincipal : Form
     {
-        
+
         public FormPrincipal()
         {
             InitializeComponent();
@@ -69,12 +69,14 @@ namespace WindowsFormsApp4
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
+
+
             panel9.Visible = false;
             panel10.Visible = false;
         }
         public void AbrirObjetivos(object abrirObjetivos)
         {
-            
+
             panelContenedor.Visible = true;
 
             if (this.panelContenedor.Controls.Count > 0)
@@ -91,26 +93,24 @@ namespace WindowsFormsApp4
 
         private void botonNotificaciones_Click(object sender, EventArgs e)
         {
-            // Si los paneles ya están abiertos, se cierran al hacer clic nuevamente
             if (panel11.Visible || panel12.Visible)
             {
                 panel11.Visible = false;
                 panel12.Visible = false;
-                return; // Salir de la función para evitar abrirlos de nuevo
+                return; 
             }
 
-            // Si hay notificación, mostrar panel11
             if (!string.IsNullOrEmpty(lbNotificacion.Text))
             {
-                panel11.Visible = true;  
-                panel12.Visible = false; 
+                panel11.Visible = true;
+                panel12.Visible = false;
                 lbNotificacion.Text = "";
                 lbNotificacion.Visible = false;
             }
             else
             {
-                panel12.Visible = true;  // 🔹 Mostrar "No hay notificaciones"
-                panel11.Visible = false; // 🔹 Ocultar "Es hora de hacer ejercicio"
+                panel12.Visible = true; 
+                panel11.Visible = false; 
             }
 
             panel11.BringToFront();
@@ -134,8 +134,21 @@ namespace WindowsFormsApp4
 
         private void botonConfiguracion_Click(object sender, EventArgs e)
         {
-            panel14.Visible = !panel14.Visible;
-            panel14.BringToFront();
+            if (panel13.Visible)
+            {
+                panel13.Visible = false;
+            }
+
+            else if (panel14.Visible)
+            {
+                panel14.Visible = false;
+            }
+
+            else
+            {
+                panel13.Visible = true;
+                panel13.BringToFront();
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -216,6 +229,45 @@ namespace WindowsFormsApp4
         private void button10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            panel13.Visible = false;
+            panel14.Visible = true;
+            panel14.BringToFront();
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            DatosUsuario.conf = true;
+
+            if (string.IsNullOrWhiteSpace(textBox8.Text) && string.IsNullOrWhiteSpace(textBox7.Text) && string.IsNullOrWhiteSpace(textBox6.Text) && string.IsNullOrWhiteSpace(textBox5.Text))
+            {
+                MessageBox.Show("No ha realizado ningun cambio", "Confirmar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return; 
+            }
+            else
+            {
+                MessageBox.Show("Cambios aplicados correctamente");
+            }
+
+            if (!string.IsNullOrWhiteSpace(textBox8.Text))
+            {
+                DatosUsuario.Altura2 = textBox8.Text;
+            }
+            if (!string.IsNullOrWhiteSpace(textBox7.Text))
+            {
+                DatosUsuario.Peso2 = textBox7.Text; 
+            }
+            if (!string.IsNullOrWhiteSpace(textBox6.Text))
+            {
+                DatosUsuario.Edad2 = textBox6.Text;
+            }
+            if (!string.IsNullOrWhiteSpace(textBox5.Text))
+            {
+                DatosUsuario.Nombre2 = textBox5.Text;
+            }
         }
     }
 }

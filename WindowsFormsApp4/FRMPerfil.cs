@@ -59,12 +59,47 @@ namespace WindowsFormsApp4
 
         private void FRMPerfil_Load(object sender, EventArgs e)
         {
-            // Cargar datos almacenados en la clase Sesion
-            label7.Text = DatosUsuario.usuario; // Si tienes un campo de nombre
-            label10.Text = DatosUsuario.Edad;
-            label11.Text = DatosUsuario.Altura;
-            label12.Text = DatosUsuario.Peso;
-            label13.Text = DatosUsuario.Genero;
+            if (DatosUsuario.conf == false)
+            {
+                label7.Text = DatosUsuario.usuario;
+                label10.Text = DatosUsuario.Edad;
+                label11.Text = DatosUsuario.Altura;
+                label12.Text = DatosUsuario.Peso;
+                label13.Text = DatosUsuario.Genero;
+            }
+            else if (DatosUsuario.conf == true)
+            {
+                if (!string.IsNullOrWhiteSpace(DatosUsuario.Nombre2))
+                {
+                    label7.Text = DatosUsuario.Nombre2;
+                    label10.Text = DatosUsuario.Edad;
+                    label11.Text = DatosUsuario.Altura;
+                    label12.Text = DatosUsuario.Peso;
+                }
+                if (!string.IsNullOrWhiteSpace(DatosUsuario.Edad2))
+                {
+                    label7.Text = DatosUsuario.usuario;
+                    label10.Text = DatosUsuario.Edad2;
+                    label11.Text = DatosUsuario.Altura;
+                    label12.Text = DatosUsuario.Peso;
+                }
+                if (!string.IsNullOrWhiteSpace(DatosUsuario.Altura2))
+                {
+                    label7.Text = DatosUsuario.usuario;
+                    label10.Text = DatosUsuario.Edad;
+                    label11.Text = DatosUsuario.Altura2;
+                    label12.Text = DatosUsuario.Peso;
+                }
+                if (!string.IsNullOrWhiteSpace(DatosUsuario.Peso2))
+                {
+                    label7.Text = DatosUsuario.usuario;
+                    label10.Text = DatosUsuario.Edad;
+                    label11.Text = DatosUsuario.Altura;
+                    label12.Text = DatosUsuario.Peso2;
+                }
+
+                label13.Text = DatosUsuario.Genero;
+            }
         }
         public static class Globales
         {
