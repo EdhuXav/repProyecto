@@ -45,7 +45,6 @@
             this.tbMin = new System.Windows.Forms.TextBox();
             this.tbHora = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -198,17 +197,9 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(-1, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(157, 52);
-            this.panel1.TabIndex = 45;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(727, 553);
+            this.button1.Location = new System.Drawing.Point(739, 565);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 41);
             this.button1.TabIndex = 46;
@@ -224,7 +215,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1080, 675);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbNombreCancion);
             this.Controls.Add(this.btSeleccionarCancion);
             this.Controls.Add(this.label3);
@@ -265,7 +255,6 @@
         private System.Windows.Forms.TextBox tbMin;
         private System.Windows.Forms.TextBox tbHora;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
     }
 }
