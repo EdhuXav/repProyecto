@@ -109,6 +109,25 @@ namespace WindowsFormsApp4
             principal.MostrarNotificacion(false); // Asegurarse de que la notificación se oculte
             Console.WriteLine("Notificación reiniciada"); // Verificación
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int cont = 0;
+
+            while (cont <= 0)
+            {
+                if (cont == 0)
+                {
+                    principal.AbrirObjetivos(new PuenteEjercicios(principal));
+                    cont++;
+                }
+                else
+                {
+                    principal.AbrirObjetivos(new FRMDiasSemana(principal));
+                }
+                
+            }
+        }
     }
 
     public partial class Notificacion : Form

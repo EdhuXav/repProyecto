@@ -23,7 +23,6 @@ namespace WindowsFormsApp4
 
             label1.BackColor = Color.Transparent;
             pictureBox2.BackColor = Color.Transparent;
-            pictureBox1.BackColor = Color.Transparent;
             label2.BackColor = Color.Transparent;
             label3.BackColor = Color.Transparent;
             label4.BackColor = Color.Transparent;

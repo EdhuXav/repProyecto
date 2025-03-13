@@ -46,6 +46,7 @@
             this.tbHora = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbNombreCancion
@@ -178,7 +179,7 @@
             // 
             // tbMin
             // 
-            this.tbMin.Location = new System.Drawing.Point(246, 193);
+            this.tbMin.Location = new System.Drawing.Point(247, 193);
             this.tbMin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbMin.Name = "tbMin";
             this.tbMin.Size = new System.Drawing.Size(47, 22);
@@ -205,6 +206,16 @@
             this.panel1.Size = new System.Drawing.Size(157, 52);
             this.panel1.TabIndex = 45;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(727, 553);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 41);
+            this.button1.TabIndex = 46;
+            this.button1.Text = "Continuar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Alarma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -212,6 +223,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1080, 675);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbNombreCancion);
             this.Controls.Add(this.btSeleccionarCancion);
@@ -254,5 +266,6 @@
         private System.Windows.Forms.TextBox tbHora;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
     }
 }

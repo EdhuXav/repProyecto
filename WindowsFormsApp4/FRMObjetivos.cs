@@ -13,7 +13,10 @@ namespace WindowsFormsApp4
         {
             InitializeComponent();
             label1.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
+            button1.Visible = true;
             pictureBox1.BackColor = Color.Transparent;
+            pictureBox3.BackColor = Color.Transparent;
         }
 
         private void FRMObjetivos_Load(object sender, EventArgs e)
@@ -24,33 +27,87 @@ namespace WindowsFormsApp4
             if (DatosUsuario.ManejoEstres != null) button3.Text = DatosUsuario.ManejoEstres;
             if (DatosUsuario.AlimentacionSana != null) button4.Text = DatosUsuario.AlimentacionSana;
 
-            // Usar los valores de DatosUsuario para establecer visibilidad
+            // Restaurar visibilidad de botones
             button2.Visible = !DatosUsuario.Boton2Oculto;
             button3.Visible = !DatosUsuario.Boton3Oculto;
             button4.Visible = !DatosUsuario.Boton4Oculto;
-        }
 
-        private void MoverBotonesHaciaArriba(Button botonSeleccionado)
-        {
-            int alturaBoton = botonSeleccionado.Height + 5;
-            botonSeleccionado.Visible = false;
+            // Restaurar posiciones
+            if (DatosUsuario.PosicionButton2 > 0) button2.Top = DatosUsuario.PosicionButton2;
+            if (DatosUsuario.PosicionButton3 > 0) button3.Top = DatosUsuario.PosicionButton3;
+            if (DatosUsuario.PosicionButton4 > 0) button4.Top = DatosUsuario.PosicionButton4;
 
-            // Guardar en DatosUsuario
-            if (botonSeleccionado == button2) DatosUsuario.Boton2Oculto = true;
-            if (botonSeleccionado == button3) DatosUsuario.Boton3Oculto = true;
-            if (botonSeleccionado == button4) DatosUsuario.Boton4Oculto = true;
+            // Asegurar orden correcto
+            ReposicionarBotones();
 
-            // Reposicionar botones
-            foreach (Control control in this.Controls)
+            // Restaurar estado de objetivos completados
+            if (DatosUsuario.ObjetivosCompletos)
             {
-                if (control is Button boton && boton.Visible && boton.Top > botonSeleccionado.Top)
-                {
-                    boton.Top -= alturaBoton;
-                }
+                button1.Visible = false;
+                label2.Visible = true;
+                label2.Text = "¡Muy bien cumpliste con todos los objetivos!";
+                pictureBox3.Visible = true;
             }
         }
-        
 
+        public void MoverBotonesHaciaArriba(Button botonSeleccionado)
+        {
+            int alturaBoton = botonSeleccionado.Height + 5;
+
+            // Guardar estado antes de ocultar
+            if (botonSeleccionado == button2)
+            {
+                DatosUsuario.Boton2Oculto = true;
+                DatosUsuario.PosicionButton2 = button2.Top;
+            }
+            if (botonSeleccionado == button3)
+            {
+                DatosUsuario.Boton3Oculto = true;
+                DatosUsuario.PosicionButton3 = button3.Top;
+            }
+            if (botonSeleccionado == button4)
+            {
+                DatosUsuario.Boton4Oculto = true;
+                DatosUsuario.PosicionButton4 = button4.Top;
+            }
+
+            botonSeleccionado.Visible = false;
+
+            // Reposicionar los botones restantes
+            ReposicionarBotones();
+
+            // Verificar si todos los botones están ocultos
+            if (DatosUsuario.Boton2Oculto && DatosUsuario.Boton3Oculto && DatosUsuario.Boton4Oculto)
+            {
+                button1.Visible = false;
+                label2.Visible = true;
+                label2.Text = "¡Muy bien cumpliste con todos los objetivos!";
+                pictureBox3.Visible = true;
+
+                // Guardar estado en DatosUsuario
+                DatosUsuario.ObjetivosCompletos = true;
+            }
+        }
+
+        private void ReposicionarBotones()
+        {
+            int posicionY = 200; // Ajusta según la posición inicial de los botones
+            int espacio = 30;
+
+            foreach (Control control in this.Controls)
+            {
+                if (control is Button boton && boton.Visible)
+                {
+                    boton.Top = posicionY;
+                    posicionY += boton.Height + espacio;
+                }
+            }
+
+            // Guardar las posiciones actuales en DatosUsuario
+            if (button2.Visible) DatosUsuario.PosicionButton2 = button2.Top;
+            if (button3.Visible) DatosUsuario.PosicionButton3 = button3.Top;
+            if (button4.Visible) DatosUsuario.PosicionButton4 = button4.Top;
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             button2.BackColor = Color.Red;

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp4
 {
-    partial class FRMExcelente
+    partial class FRMDesacnso
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMExcelente));
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMDesacnso));
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // button8
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(110, 183);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(624, 252);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "¡Tienes una excelente gestión emocional! Sigue así y ayuda a otros a gestionar su" +
-    "s emociones.";
+            this.button8.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(467, 606);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(144, 43);
+            this.button8.TabIndex = 17;
+            this.button8.Text = "Atrás";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // FRMExcelente
+            // FRMDesacnso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1080, 675);
-            this.Controls.Add(this.label1);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1080, 671);
+            this.Controls.Add(this.button8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FRMExcelente";
-            this.Text = "FRMExcelente";
+            this.Name = "FRMDesacnso";
+            this.Text = "FRMDesacnso";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button8;
     }
 }

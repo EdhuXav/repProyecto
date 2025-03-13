@@ -42,9 +42,28 @@ namespace WindowsFormsApp4
 
         private void BTSiguientee_Click(object sender, EventArgs e)
         {
-            FRMRegistro4 fRMRegistro4 = new FRMRegistro4();
-            fRMRegistro4.Show();
-            this.Hide();
+            bool y = false;
+            foreach (Control c in this.Controls) {
+                if (c is CheckBox checkBox && checkBox.Checked)
+                {
+                    y = true;
+                }
+            }
+            if (y == true)
+            {
+                FRMRegistro4 fRMRegistro4 = new FRMRegistro4();
+                fRMRegistro4.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Ingrese su nivel de actividad", "Seleccione", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            if (CBNomuyactivo.Checked) DatosUsuario.aa = true;
+            else if (CBLigeramenteactivo.Checked) DatosUsuario.bb = true;
+            else if (CBActivo.Checked) DatosUsuario.cc = true;
+            else if (CBMuyactivo.Checked) DatosUsuario.dd = true;
         }
 
         private void BTAtrass_Click(object sender, EventArgs e)

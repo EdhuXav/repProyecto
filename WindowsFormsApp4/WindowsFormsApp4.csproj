@@ -108,11 +108,23 @@
       <DependentUpon>FRMCena.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMContadorRespuestas.cs" />
+    <Compile Include="FRMDesacnso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDesacnso.Designer.cs">
+      <DependentUpon>FRMDesacnso.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMDesayuno.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRMDesayuno.Designer.cs">
       <DependentUpon>FRMDesayuno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDiasSemana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDiasSemana.Designer.cs">
+      <DependentUpon>FRMDiasSemana.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMElegirComida.cs">
       <SubType>Form</SubType>
@@ -216,6 +228,18 @@
     <Compile Include="FRMRrespiracion.Designer.cs">
       <DependentUpon>FRMRrespiracion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMRutina1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRutina1.Designer.cs">
+      <DependentUpon>FRMRutina1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMRutina2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRutina2.Designer.cs">
+      <DependentUpon>FRMRutina2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pregunta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +291,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PuenteEjercicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuenteEjercicios.Designer.cs">
+      <DependentUpon>PuenteEjercicios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Alarma.resx">
       <DependentUpon>Alarma.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,8 +324,14 @@
     <EmbeddedResource Include="FRMCena.resx">
       <DependentUpon>FRMCena.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMDesacnso.resx">
+      <DependentUpon>FRMDesacnso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMDesayuno.resx">
       <DependentUpon>FRMDesayuno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDiasSemana.resx">
+      <DependentUpon>FRMDiasSemana.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMElegirComida.resx">
       <DependentUpon>FRMElegirComida.cs</DependentUpon>
@@ -348,6 +384,12 @@
     <EmbeddedResource Include="FRMRrespiracion.resx">
       <DependentUpon>FRMRrespiracion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMRutina1.resx">
+      <DependentUpon>FRMRutina1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMRutina2.resx">
+      <DependentUpon>FRMRutina2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pregunta.resx">
       <DependentUpon>Pregunta.cs</DependentUpon>
     </EmbeddedResource>
@@ -382,6 +424,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="PuenteEjercicios.resx">
+      <DependentUpon>PuenteEjercicios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -482,6 +527,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imagen_2025-03-12_130400841.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-03-13 at 1.25.00 AM.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

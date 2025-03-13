@@ -46,7 +46,12 @@ namespace WindowsFormsApp4
         public static string opc3 { get; set; } = "Perder Peso y Alimentación Sana";
         public static string opc4 { get; set; } = "Aumentar Peso y Alimentación Sana";
         public static string opc5 { get; set; } = "Mantener Peso";
-        
+        public static string opc6 { get; set; } = "No muy activo";
+        public static string opc7 { get; set; } = "Ligeramente activo";
+        public static string opc8 { get; set; } = "Activo";
+        public static string opc9 { get; set; } = "Muy activo";
+
+
 
 
         public static string PerderPeso { get; set; }
@@ -58,6 +63,17 @@ namespace WindowsFormsApp4
 
         public static string logro1 { get; set; }
         public static string logro2 { get; set; }
-        public static string logro3 { get; set; } 
+        public static string logro3 { get; set; }
+
+        public static int PosicionButton2 = 0;
+        public static int PosicionButton3 = 0;
+        public static int PosicionButton4 = 0;
+
+        public static bool aa { get; set; } = false;
+        public static bool bb { get; set; } = false;
+        public static bool cc { get; set; } = false;
+        public static bool dd { get; set; } = false;
+
+        public static bool ObjetivosCompletos { get; set; } = false;
     }
 }

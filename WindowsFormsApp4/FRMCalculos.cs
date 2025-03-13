@@ -25,15 +25,15 @@ namespace WindowsFormsApp4
         {
             if (DatosUsuario.x == true || DatosUsuario.a == true || DatosUsuario.b == true)
             {
-                label1.Text = string.Join("\n", CalculosComida.sumaProetina);
-                label2.Text = string.Join("\n", CalculosComida.sumaCalorias);
-                label3.Text = string.Join("\n", CalculosComida.sumaCarbohidratos);
-            }
-            else if (DatosUsuario.y == true || DatosUsuario.c == true)
-            {
                 label1.Text = string.Join("\n", CalculosComida2.sumaProetina);
                 label2.Text = string.Join("\n", CalculosComida2.sumaCalorias);
                 label3.Text = string.Join("\n", CalculosComida2.sumaCarbohidratos);
+            }
+            else if (DatosUsuario.y == true || DatosUsuario.c == true)
+            {
+                label1.Text = string.Join("\n", CalculosComida.sumaProetina);
+                label2.Text = string.Join("\n", CalculosComida.sumaCalorias);
+                label3.Text = string.Join("\n", CalculosComida.sumaCarbohidratos);
             }
         }
 

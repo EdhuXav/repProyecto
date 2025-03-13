@@ -169,5 +169,15 @@ namespace WindowsFormsApp4.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_03_13_at_1_25_00_AM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-03-13 at 1.25.00 AM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

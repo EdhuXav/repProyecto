@@ -14,13 +14,11 @@ namespace WindowsFormsApp4
 {
     public partial class FormPrincipal : Form
     {
-
         public FormPrincipal()
         {
             InitializeComponent();
             SidePanel.Height = botonHome.Height;
             SidePanel.Top = botonHome.Top;
-
         }
 
         public void MostrarNotificacion(bool mostrar)
@@ -276,6 +274,11 @@ namespace WindowsFormsApp4
             {
                 DatosUsuario.usuario = textBox5.Text;
             }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            AbrirObjetivos(new FRMDiasSemana(this));
         }
     }
 }
