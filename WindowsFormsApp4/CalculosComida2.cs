@@ -24,97 +24,97 @@ namespace WindowsFormsApp4
         public static double carbohidratos4 { get; set; } = 0.01;
         public static double calorias4 { get; set; } = 0.12;
 
-        public static int proteinas5 { get; set; } = 5;
-        public static int carbohidratos5 { get; set; } = 3;
-        public static int calorias5 { get; set; } = 2;
+        public static double proteinas5 { get; set; } = 0;
+        public static double carbohidratos5 { get; set; } = 0.01;
+        public static double calorias5 { get; set; } = 0.05;
 
-        public static int proteinas6 { get; set; } = 5;
-        public static int carbohidratos6 { get; set; } = 3;
-        public static int calorias6 { get; set; } = 2;
+        public static double proteinas6 { get; set; } = 0.1;
+        public static double carbohidratos6 { get; set; } = 0.09;
+        public static double calorias6 { get; set; } = 0.05;
 
-        public static int proteinas7 { get; set; } = 5;
-        public static int carbohidratos7 { get; set; } = 3;
-        public static int calorias7 { get; set; } = 2;
+        public static double proteinas7 { get; set; } = 0.12;
+        public static double carbohidratos7 { get; set; } = 0;
+        public static double calorias7 { get; set; } = 0.11;
 
-        public static int proteinas8 { get; set; } = 5;
-        public static int carbohidratos8 { get; set; } = 3;
-        public static int calorias8 { get; set; } = 2;
+        public static double proteinas8 { get; set; } = 0.1;
+        public static double carbohidratos8 { get; set; } = 0;
+        public static double calorias8 { get; set; } = 0.08;
 
-        public static int proteinas9 { get; set; } = 5;
-        public static int carbohidratos9 { get; set; } = 3;
-        public static int calorias9 { get; set; } = 2;
+        public static double proteinas9 { get; set; } = 0.12;
+        public static double carbohidratos9 { get; set; } = 3;
+        public static double calorias9 { get; set; } = 2;
 
-        public static int proteinas10 { get; set; } = 5;
-        public static int carbohidratos10 { get; set; } = 3;
-        public static int calorias10 { get; set; } = 2;
+        public static double proteinas10 { get; set; } = 0.19;
+        public static double carbohidratos10 { get; set; } = 0.08;
+        public static double calorias10 { get; set; } = 0;
 
-        public static int proteinas11 { get; set; } = 5;
-        public static int carbohidratos11 { get; set; } = 3;
-        public static int calorias11 { get; set; } = 2;
+        public static double proteinas11 { get; set; } = 0.12;
+        public static double carbohidratos11 { get; set; } = 0.05;
+        public static double calorias11 { get; set; } = 0.14;
 
-        public static int proteinas12 { get; set; } = 5;
-        public static int carbohidratos12 { get; set; } = 3;
-        public static int calorias12 { get; set; } = 2;
+        public static double proteinas12 { get; set; } = 0.10;
+        public static double carbohidratos12 { get; set; } = 0.01;
+        public static double calorias12 { get; set; } = 0.1;
 
-        public static int proteinas13 { get; set; } = 5;
-        public static int carbohidratos13 { get; set; } = 3;
-        public static int calorias13 { get; set; } = 2;
+        public static double proteinas13 { get; set; } = 0.15;
+        public static double carbohidratos13 { get; set; } = 0;
+        public static double calorias13 { get; set; } = 0.11;
 
-        public static int proteinas14 { get; set; } = 5;
-        public static int carbohidratos14 { get; set; } = 3;
-        public static int calorias14 { get; set; } = 2;
+        public static double proteinas14 { get; set; } = 0.12;
+        public static double carbohidratos14 { get; set; } = 0.01;
+        public static double calorias14 { get; set; } = 0.11;
 
-        public static int proteinas15 { get; set; } = 5;
-        public static int carbohidratos15 { get; set; } = 3;
-        public static int calorias15 { get; set; } = 2;
+        public static double proteinas15 { get; set; } = 0.11;
+        public static double carbohidratos15 { get; set; } = 3;
+        public static double calorias15 { get; set; } = 0.04;
 
-        public static int proteinas16 { get; set; } = 5;
-        public static int carbohidratos16 { get; set; } = 3;
-        public static int calorias16 { get; set; } = 2;
+        public static double proteinas16 { get; set; } = 0.14;
+        public static double carbohidratos16 { get; set; } = 0.01;
+        public static double calorias16 { get; set; } = 0.08;
 
-        public static int proteinas17 { get; set; } = 5;
-        public static int carbohidratos17 { get; set; } = 3;
-        public static int calorias17 { get; set; } = 2;
+        public static double proteinas17 { get; set; } = 0.10;
+        public static double carbohidratos17 { get; set; } = 0.07;
+        public static double calorias17 { get; set; } = 0.01;
 
-        public static int proteinas18 { get; set; } = 5;
-        public static int carbohidratos18 { get; set; } = 3;
-        public static int calorias18 { get; set; } = 2;
+        public static double proteinas18 { get; set; } = 0.14;
+        public static double carbohidratos18 { get; set; } = 0.08;
+        public static double calorias18 { get; set; } = 0.05;
 
-        public static int proteinas19 { get; set; } = 5;
-        public static int carbohidratos19 { get; set; } = 3;
-        public static int calorias19 { get; set; } = 2;
+        public static double proteinas19 { get; set; } = 0.19;
+        public static double carbohidratos19 { get; set; } = 0.08;
+        public static double calorias19 { get; set; } = 0.11;
 
-        public static int proteinas20 { get; set; } = 5;
-        public static int carbohidratos20 { get; set; } = 3;
-        public static int calorias20 { get; set; } = 2;
+        public static double proteinas20 { get; set; } = 0.14;
+        public static double carbohidratos20 { get; set; } = 0.01;
+        public static double calorias20 { get; set; } = 0.12;
 
-        public static int proteinas21 { get; set; } = 5;
-        public static int carbohidratos21 { get; set; } = 3;
-        public static int calorias21 { get; set; } = 2;
+        public static double proteinas21 { get; set; } = 0.09;
+        public static double carbohidratos21 { get; set; } = 0;
+        public static double calorias21 { get; set; } = 0.08;
 
-        public static int proteinas22 { get; set; } = 5;
-        public static int carbohidratos22 { get; set; } = 3;
-        public static int calorias22 { get; set; } = 2;
+        public static double proteinas22 { get; set; } = 0.10;
+        public static double carbohidratos22 { get; set; } = 3;
+        public static double calorias22 { get; set; } = 0.14;
 
-        public static int proteinas23 { get; set; } = 5;
-        public static int carbohidratos23 { get; set; } = 3;
-        public static int calorias23 { get; set; } = 2;
+        public static double proteinas23 { get; set; } = 0.2;
+        public static double carbohidratos23 { get; set; } = 0;
+        public static double calorias23 { get; set; } = 0.17;
 
-        public static int proteinas24 { get; set; } = 5;
-        public static int carbohidratos24 { get; set; } = 3;
-        public static int calorias24 { get; set; } = 2;
+        public static double proteinas24 { get; set; } = 5;
+        public static double carbohidratos24 { get; set; } = 0.01;
+        public static double calorias24 { get; set; } = 0.08;
 
-        public static int proteinas25 { get; set; } = 5;
-        public static int carbohidratos25 { get; set; } = 3;
-        public static int calorias25 { get; set; } = 2;
+        public static double proteinas25 { get; set; } = 0.19;
+        public static double carbohidratos25 { get; set; } = 0.08;
+        public static double calorias25 { get; set; } = 0.14;
 
-        public static int proteinas26 { get; set; } = 5;
-        public static int carbohidratos26 { get; set; } = 3;
-        public static int calorias26 { get; set; } = 2;
+        public static double proteinas26 { get; set; } = 0.08;
+        public static double carbohidratos26 { get; set; } = 0.18;
+        public static double calorias26 { get; set; } = 0.01;
 
-        public static int proteinas27 { get; set; } = 5;
-        public static int carbohidratos27 { get; set; } = 3;
-        public static int calorias27 { get; set; } = 2;
+        public static double proteinas27 { get; set; } = 0.19;
+        public static double carbohidratos27 { get; set; } = 0.12;
+        public static double calorias27 { get; set; } = 0;
 
         public static double sumaProetina { get; set; } = 0;
         public static double sumaCalorias { get; set; } = 0;

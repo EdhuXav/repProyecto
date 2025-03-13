@@ -22,6 +22,7 @@ namespace WindowsFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DatosUsuario.siguiente = true;
             button1.BackColor = Color.Yellow; 
             label3.Text = string.Join("(\n", Preguntas.P5Opcn1);
             button2.Enabled = false;
@@ -31,6 +32,7 @@ namespace WindowsFormsApp4
 
         private void button2_Click(object sender, EventArgs e)
         {
+            DatosUsuario.siguiente = true;
             button2.BackColor = Color.Green;
             label3.Text = string.Join("(\n", Preguntas.P5Opcn2);
             button1.Enabled = false;
@@ -40,6 +42,7 @@ namespace WindowsFormsApp4
 
         private void button3_Click(object sender, EventArgs e)
         {
+            DatosUsuario.siguiente = true;
             button3.BackColor = Color.Red;
             label3.Text = string.Join("(\n", Preguntas.P5Opcn3);
             button1.Enabled = false;
@@ -49,17 +52,24 @@ namespace WindowsFormsApp4
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (FRMContadorRespuestas.Excelente > FRMContadorRespuestas.Bueno && FRMContadorRespuestas.Excelente > FRMContadorRespuestas.Malo)
+            if (!string.IsNullOrEmpty(label3.Text))
             {
-                principal.AbrirObjetivos(new FRMExcelente());
-            }
-            else if (FRMContadorRespuestas.Bueno > FRMContadorRespuestas.Excelente && FRMContadorRespuestas.Bueno > FRMContadorRespuestas.Malo)
-            {
-                principal.AbrirObjetivos(new FRMBueno());
+                if (FRMContadorRespuestas.Excelente > FRMContadorRespuestas.Bueno && FRMContadorRespuestas.Excelente > FRMContadorRespuestas.Malo)
+                {
+                    principal.AbrirObjetivos(new FRMExcelente());
+                }
+                else if (FRMContadorRespuestas.Bueno > FRMContadorRespuestas.Excelente && FRMContadorRespuestas.Bueno > FRMContadorRespuestas.Malo)
+                {
+                    principal.AbrirObjetivos(new FRMBueno());
+                }
+                else
+                {
+                    principal.AbrirObjetivos(new FRMMalo());
+                }
             }
             else
             {
-                principal.AbrirObjetivos(new FRMMalo());
+                MessageBox.Show("Seleccione una respuesta", "Pregunta sin respuesta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 

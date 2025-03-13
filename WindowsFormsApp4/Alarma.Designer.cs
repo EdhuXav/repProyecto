@@ -51,7 +51,7 @@
             // lbNombreCancion
             // 
             this.lbNombreCancion.AutoSize = true;
-            this.lbNombreCancion.Location = new System.Drawing.Point(213, 586);
+            this.lbNombreCancion.Location = new System.Drawing.Point(214, 577);
             this.lbNombreCancion.Name = "lbNombreCancion";
             this.lbNombreCancion.Size = new System.Drawing.Size(56, 16);
             this.lbNombreCancion.TabIndex = 44;
@@ -72,7 +72,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(232, 207);
+            this.label3.Location = new System.Drawing.Point(233, 198);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(10, 16);
             this.label3.TabIndex = 42;
@@ -81,7 +81,7 @@
             // cbDom
             // 
             this.cbDom.AutoSize = true;
-            this.cbDom.Location = new System.Drawing.Point(141, 521);
+            this.cbDom.Location = new System.Drawing.Point(142, 512);
             this.cbDom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbDom.Name = "cbDom";
             this.cbDom.Size = new System.Drawing.Size(84, 20);
@@ -92,7 +92,7 @@
             // cbSab
             // 
             this.cbSab.AutoSize = true;
-            this.cbSab.Location = new System.Drawing.Point(141, 479);
+            this.cbSab.Location = new System.Drawing.Point(142, 470);
             this.cbSab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbSab.Name = "cbSab";
             this.cbSab.Size = new System.Drawing.Size(78, 20);
@@ -103,7 +103,7 @@
             // cbVier
             // 
             this.cbVier.AutoSize = true;
-            this.cbVier.Location = new System.Drawing.Point(141, 440);
+            this.cbVier.Location = new System.Drawing.Point(142, 431);
             this.cbVier.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbVier.Name = "cbVier";
             this.cbVier.Size = new System.Drawing.Size(75, 20);
@@ -114,7 +114,7 @@
             // cbJue
             // 
             this.cbJue.AutoSize = true;
-            this.cbJue.Location = new System.Drawing.Point(141, 401);
+            this.cbJue.Location = new System.Drawing.Point(142, 392);
             this.cbJue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbJue.Name = "cbJue";
             this.cbJue.Size = new System.Drawing.Size(73, 20);
@@ -125,7 +125,7 @@
             // cbMier
             // 
             this.cbMier.AutoSize = true;
-            this.cbMier.Location = new System.Drawing.Point(141, 362);
+            this.cbMier.Location = new System.Drawing.Point(142, 353);
             this.cbMier.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbMier.Name = "cbMier";
             this.cbMier.Size = new System.Drawing.Size(88, 20);
@@ -136,7 +136,7 @@
             // cbMar
             // 
             this.cbMar.AutoSize = true;
-            this.cbMar.Location = new System.Drawing.Point(141, 326);
+            this.cbMar.Location = new System.Drawing.Point(142, 317);
             this.cbMar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbMar.Name = "cbMar";
             this.cbMar.Size = new System.Drawing.Size(70, 20);
@@ -147,7 +147,7 @@
             // cbLun
             // 
             this.cbLun.AutoSize = true;
-            this.cbLun.Location = new System.Drawing.Point(141, 287);
+            this.cbLun.Location = new System.Drawing.Point(142, 278);
             this.cbLun.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbLun.Name = "cbLun";
             this.cbLun.Size = new System.Drawing.Size(65, 20);
@@ -158,7 +158,7 @@
             // cbSL
             // 
             this.cbSL.AutoSize = true;
-            this.cbSL.Location = new System.Drawing.Point(141, 250);
+            this.cbSL.Location = new System.Drawing.Point(142, 241);
             this.cbSL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbSL.Name = "cbSL";
             this.cbSL.Size = new System.Drawing.Size(144, 20);
@@ -170,7 +170,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(138, 206);
+            this.label2.Location = new System.Drawing.Point(139, 197);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 16);
             this.label2.TabIndex = 33;
@@ -178,7 +178,7 @@
             // 
             // tbMin
             // 
-            this.tbMin.Location = new System.Drawing.Point(245, 202);
+            this.tbMin.Location = new System.Drawing.Point(246, 193);
             this.tbMin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbMin.Name = "tbMin";
             this.tbMin.Size = new System.Drawing.Size(47, 22);
@@ -186,7 +186,7 @@
             // 
             // tbHora
             // 
-            this.tbHora.Location = new System.Drawing.Point(184, 202);
+            this.tbHora.Location = new System.Drawing.Point(185, 193);
             this.tbHora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbHora.Name = "tbHora";
             this.tbHora.Size = new System.Drawing.Size(47, 22);
@@ -194,12 +194,13 @@
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(-1, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(157, 52);
             this.panel1.TabIndex = 45;
@@ -210,7 +211,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1080, 674);
+            this.ClientSize = new System.Drawing.Size(1080, 675);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbNombreCancion);
             this.Controls.Add(this.btSeleccionarCancion);
@@ -227,7 +228,7 @@
             this.Controls.Add(this.tbMin);
             this.Controls.Add(this.tbHora);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Alarma";
             this.Text = "Alarma";
             this.ResumeLayout(false);

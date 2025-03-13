@@ -29,11 +29,11 @@
         {
             if (DatosUsuario.x == true || DatosUsuario.a == true || DatosUsuario.b == true)
             {
-                principal.AbrirObjetivos(new FRMCena(principal));
+                principal.AbrirObjetivos(new FRMAumentarMasaCen(principal));
             }
             else if (DatosUsuario.y == true || DatosUsuario.c == true)
             {
-                principal.AbrirObjetivos(new FRMAumentarMasaCen(principal));
+                principal.AbrirObjetivos(new FRMCena(principal));
             }
         }
 
@@ -43,11 +43,11 @@
         {
             if (DatosUsuario.x == true ||DatosUsuario.a == true ||DatosUsuario.b == true)
             {
-                principal.AbrirObjetivos(new FRMDesayuno(principal));
+                principal.AbrirObjetivos(new FRMAumentarMasaD(principal));
             }
             else if (DatosUsuario.y ||DatosUsuario.c == true)
             {
-                principal.AbrirObjetivos(new FRMAumentarMasaD(principal));
+                principal.AbrirObjetivos(new FRMDesayuno(principal));
             }
         }
 
@@ -55,10 +55,10 @@
         {
             if (DatosUsuario.x == true || DatosUsuario.a == true || DatosUsuario.b == true)
             {
-                principal.AbrirObjetivos(new FRMAlmuerzo(principal));
+                principal.AbrirObjetivos(new FRMAumentarMasaAl(principal));
             }
             else if (DatosUsuario.y == true || DatosUsuario.c == true)
-                principal.AbrirObjetivos(new FRMAumentarMasaAl(principal));
+                principal.AbrirObjetivos(new FRMAlmuerzo(principal)); 
             }
         }
     }

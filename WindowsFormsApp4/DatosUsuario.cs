@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,6 +34,11 @@ namespace WindowsFormsApp4
         public static bool b { get; set; } = false;
         public static bool c { get; set; } = false;
         public static bool conf { get; set; } = false;
+        public static bool siguiente { get; set; } = false;
+
+        public static bool Boton2Oculto { get ; set; } = false;
+        public static bool Boton3Oculto { get; set; } = false;
+        public static bool Boton4Oculto { get; set; } = false;
 
 
         public static string opc1 { get; set; } = "Perder peso";

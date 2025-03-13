@@ -83,6 +83,16 @@ namespace WindowsFormsApp4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imagen_2025_03_12_130400841 {
+            get {
+                object obj = ResourceManager.GetObject("imagen_2025-03-12_130400841", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap information__1_ {
             get {
                 object obj = ResourceManager.GetObject("information (1)", resourceCulture);

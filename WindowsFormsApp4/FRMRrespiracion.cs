@@ -8,17 +8,18 @@ namespace WindowsFormsApp4
     public partial class FRMRrespiracion : Form
     {
         private FormPrincipal principal;
-        int contador = 0; // Contador para las fases
-        int tiempoTranscurrido = 0; // Tiempo transcurrido en la fase actual
-        int segundosRestantes = 3; // Inicializa en 3 segundos
+        int contador = 0;
+        int tiempoTranscurrido = 0; 
+        int segundosRestantes = 3; 
 
-        string[] mensajes = { "Inhala", "Mantén la respiración", "Exhala" }; // Mensajes de cada fase
-        Color[] colores = { Color.Red, Color.Yellow, Color.Green }; // Colores de cada fase
+        string[] mensajes = { "Inhala", "Mantén la respiración", "Exhala" };
+        Color[] colores = { Color.Red, Color.Orange, Color.Green }; 
+        string[] imagenes = { "Inhala.jpeg" , "manten.jpeg", "exhala.jpeg" };
 
         public FRMRrespiracion(FormPrincipal principal)
         {
             InitializeComponent();
-            timer1.Interval = 1000; // Intervalo de 1 segundo
+            timer1.Interval = 1000; 
             timer1.Enabled = false;
             this.principal = principal;
         }
@@ -29,10 +30,7 @@ namespace WindowsFormsApp4
             tiempoTranscurrido = 0;
             segundosRestantes = 3;
 
-            label1.Text = mensajes[contador];
-            label2.Text = segundosRestantes.ToString();
-            label2.ForeColor = colores[contador];
-
+            ActualizarUI();
             timer1.Start();
 
             button1.Enabled = false;
@@ -43,26 +41,34 @@ namespace WindowsFormsApp4
         {
             tiempoTranscurrido++;
 
-            // Solo cambiar el número cada 2 segundos
-            if (tiempoTranscurrido % 2 == 0)
+            if (segundosRestantes > 1)
             {
                 segundosRestantes--;
+            }
+            else
+            {
+                contador = (contador + 1) % mensajes.Length;
+                segundosRestantes = 3;
+            }
 
-                if (segundosRestantes > 0)
-                {
-                    label2.Text = segundosRestantes.ToString();
-                }
-                else
-                {
-                    // Cambiar de fase
-                    contador = (contador + 1) % mensajes.Length;
-                    label1.Text = mensajes[contador];
-                    label2.ForeColor = colores[contador];
+            ActualizarUI();
+        }
 
-                    // Reiniciar cuenta regresiva
-                    segundosRestantes = 3;
-                    label2.Text = segundosRestantes.ToString();
-                }
+        private void ActualizarUI()
+        {
+            label1.Text = mensajes[contador];
+            label2.Text = segundosRestantes.ToString();
+            label2.ForeColor = colores[contador];
+
+            string rutaImagen = System.IO.Path.Combine(Application.StartupPath, imagenes[contador]);
+
+            if (System.IO.File.Exists(rutaImagen))
+            {
+                pictureBox1.Image = Image.FromFile(rutaImagen);
+            }
+            else
+            {
+                MessageBox.Show("No se encontró la imagen: " + rutaImagen);
             }
         }
 

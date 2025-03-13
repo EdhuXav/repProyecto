@@ -22,7 +22,14 @@ namespace WindowsFormsApp4
 
         private void button4_Click(object sender, EventArgs e)
         {
-            principal.AbrirObjetivos(new FRMPregunta4(principal));
+            if (!string.IsNullOrEmpty(label3.Text))
+            {
+                principal.AbrirObjetivos(new FRMPregunta4(principal));
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una respuesta", "Pregunta sin respuesta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,6 +52,7 @@ namespace WindowsFormsApp4
 
         private void button3_Click(object sender, EventArgs e)
         {
+            DatosUsuario.siguiente = true;
             button3.BackColor = Color.Yellow;
             label3.Text = string.Join("(\n", Preguntas.P3Opcn3);
             button1.Enabled = false;

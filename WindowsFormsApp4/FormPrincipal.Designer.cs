@@ -607,7 +607,7 @@
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(19, 52);
+            this.label6.Location = new System.Drawing.Point(12, 52);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(199, 25);
             this.label6.TabIndex = 0;
@@ -656,7 +656,7 @@
             this.panelContenedor.Location = new System.Drawing.Point(256, 87);
             this.panelContenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1080, 759);
+            this.panelContenedor.Size = new System.Drawing.Size(1080, 671);
             this.panelContenedor.TabIndex = 36;
             // 
             // textBox8
@@ -804,7 +804,7 @@
             this.panel14.Controls.Add(this.textBox6);
             this.panel14.Controls.Add(this.textBox7);
             this.panel14.Controls.Add(this.textBox8);
-            this.panel14.Location = new System.Drawing.Point(565, 87);
+            this.panel14.Location = new System.Drawing.Point(560, 87);
             this.panel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(269, 106);

@@ -7,7 +7,7 @@ namespace WindowsFormsApp4
 {
     public partial class FRMObjetivos : Form
     {
-        private Button objetivoSeleccionado = null; // Variable para almacenar el objetivo seleccionado
+        private Button objetivoSeleccionado = null; 
 
         public FRMObjetivos()
         {
@@ -23,23 +23,33 @@ namespace WindowsFormsApp4
             if (DatosUsuario.MantenerPeso != null) button2.Text = DatosUsuario.MantenerPeso;
             if (DatosUsuario.ManejoEstres != null) button3.Text = DatosUsuario.ManejoEstres;
             if (DatosUsuario.AlimentacionSana != null) button4.Text = DatosUsuario.AlimentacionSana;
+
+            // Usar los valores de DatosUsuario para establecer visibilidad
+            button2.Visible = !DatosUsuario.Boton2Oculto;
+            button3.Visible = !DatosUsuario.Boton3Oculto;
+            button4.Visible = !DatosUsuario.Boton4Oculto;
         }
 
         private void MoverBotonesHaciaArriba(Button botonSeleccionado)
         {
-            int alturaBoton = botonSeleccionado.Height + 5; // Espacio que ocupará el botón oculto
+            int alturaBoton = botonSeleccionado.Height + 5;
+            botonSeleccionado.Visible = false;
 
-            botonSeleccionado.Visible = false; // Oculta el botón seleccionado
+            // Guardar en DatosUsuario
+            if (botonSeleccionado == button2) DatosUsuario.Boton2Oculto = true;
+            if (botonSeleccionado == button3) DatosUsuario.Boton3Oculto = true;
+            if (botonSeleccionado == button4) DatosUsuario.Boton4Oculto = true;
 
-            // Reposiciona los botones restantes
+            // Reposicionar botones
             foreach (Control control in this.Controls)
             {
                 if (control is Button boton && boton.Visible && boton.Top > botonSeleccionado.Top)
                 {
-                    boton.Top -= alturaBoton; // Mueve hacia arriba los botones que estaban debajo
+                    boton.Top -= alturaBoton;
                 }
             }
         }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {

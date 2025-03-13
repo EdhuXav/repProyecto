@@ -59,52 +59,44 @@ namespace WindowsFormsApp4
 
         private void FRMPerfil_Load(object sender, EventArgs e)
         {
-            if (DatosUsuario.conf == false)
-            {
-                label7.Text = DatosUsuario.usuario;
-                label10.Text = DatosUsuario.Edad;
-                label11.Text = DatosUsuario.Altura;
-                label12.Text = DatosUsuario.Peso;
-                label13.Text = DatosUsuario.Genero;
-            }
-            else if (DatosUsuario.conf == true)
+            string nombre = DatosUsuario.usuario;
+            string edad = DatosUsuario.Edad;
+            string altura = DatosUsuario.Altura;
+            string peso = DatosUsuario.Peso;
+            string genero = DatosUsuario.Genero;
+
+            if (DatosUsuario.conf == true)
             {
                 if (!string.IsNullOrWhiteSpace(DatosUsuario.Nombre2))
                 {
-                    label7.Text = DatosUsuario.Nombre2;
-                    label10.Text = DatosUsuario.Edad;
-                    label11.Text = DatosUsuario.Altura;
-                    label12.Text = DatosUsuario.Peso;
+                    nombre = DatosUsuario.Nombre2;
                 }
                 if (!string.IsNullOrWhiteSpace(DatosUsuario.Edad2))
                 {
-                    label7.Text = DatosUsuario.usuario;
-                    label10.Text = DatosUsuario.Edad2;
-                    label11.Text = DatosUsuario.Altura;
-                    label12.Text = DatosUsuario.Peso;
+                    edad = DatosUsuario.Edad2;
                 }
                 if (!string.IsNullOrWhiteSpace(DatosUsuario.Altura2))
                 {
-                    label7.Text = DatosUsuario.usuario;
-                    label10.Text = DatosUsuario.Edad;
-                    label11.Text = DatosUsuario.Altura2;
-                    label12.Text = DatosUsuario.Peso;
+                    altura = DatosUsuario.Altura2;
                 }
                 if (!string.IsNullOrWhiteSpace(DatosUsuario.Peso2))
                 {
-                    label7.Text = DatosUsuario.usuario;
-                    label10.Text = DatosUsuario.Edad;
-                    label11.Text = DatosUsuario.Altura;
-                    label12.Text = DatosUsuario.Peso2;
+                    peso = DatosUsuario.Peso2;
                 }
-
-                label13.Text = DatosUsuario.Genero;
             }
+
+            label7.Text = nombre;
+            label10.Text = edad;
+            label11.Text = altura;
+            label12.Text = peso;
+            label13.Text = genero;
         }
+        
         public static class Globales
         {
             public static Image ImagenPerfil { get; set; }
         }
+
 
     }
 }

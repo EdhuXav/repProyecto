@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using static WindowsFormsApp4.FRMRegistro;
 
@@ -24,8 +25,11 @@ namespace WindowsFormsApp4
 
         public void MostrarNotificacion(bool mostrar)
         {
-            lbNotificacion.Text = mostrar ? "1" : "";
-            lbNotificacion.Visible = mostrar;
+            if (mostrar)
+            {
+                lbNotificacion.Text = "1";
+                lbNotificacion.Visible = true;
+            }
         }
 
         public void OcultarPanelNoNotificaciones()
@@ -69,10 +73,12 @@ namespace WindowsFormsApp4
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
-
-
             panel9.Visible = false;
             panel10.Visible = false;
+            textBox8.Text = DatosUsuario.Altura;
+            textBox7.Text = DatosUsuario.Peso;
+            textBox6.Text = DatosUsuario.Edad;
+            textBox5.Text = DatosUsuario.usuario;
         }
         public void AbrirObjetivos(object abrirObjetivos)
         {
@@ -97,20 +103,22 @@ namespace WindowsFormsApp4
             {
                 panel11.Visible = false;
                 panel12.Visible = false;
-                return; 
+                return;
             }
 
-            if (!string.IsNullOrEmpty(lbNotificacion.Text))
+            if (!string.IsNullOrEmpty(lbNotificacion.Text)) // Si hay una notificación
             {
                 panel11.Visible = true;
                 panel12.Visible = false;
+
+                // Ahora sí borramos la notificación porque el usuario ha interactuado con el botón
                 lbNotificacion.Text = "";
                 lbNotificacion.Visible = false;
             }
             else
             {
-                panel12.Visible = true; 
-                panel11.Visible = false; 
+                panel12.Visible = true;
+                panel11.Visible = false;
             }
 
             panel11.BringToFront();
@@ -240,9 +248,10 @@ namespace WindowsFormsApp4
 
         private void button10_Click_1(object sender, EventArgs e)
         {
+
             DatosUsuario.conf = true;
 
-            if (string.IsNullOrWhiteSpace(textBox8.Text) && string.IsNullOrWhiteSpace(textBox7.Text) && string.IsNullOrWhiteSpace(textBox6.Text) && string.IsNullOrWhiteSpace(textBox5.Text))
+            if (textBox8.Text == DatosUsuario.Altura && textBox7.Text == DatosUsuario.Peso && textBox6.Text == DatosUsuario.Edad && textBox5.Text == DatosUsuario.usuario)
             {
                 MessageBox.Show("No ha realizado ningun cambio", "Confirmar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return; 
@@ -251,22 +260,21 @@ namespace WindowsFormsApp4
             {
                 MessageBox.Show("Cambios aplicados correctamente");
             }
-
-            if (!string.IsNullOrWhiteSpace(textBox8.Text))
+            if (textBox8.Text != DatosUsuario.Altura)
             {
-                DatosUsuario.Altura2 = textBox8.Text;
+                DatosUsuario.Altura = textBox8.Text;
             }
-            if (!string.IsNullOrWhiteSpace(textBox7.Text))
+            if (textBox7.Text != DatosUsuario.Peso)
             {
-                DatosUsuario.Peso2 = textBox7.Text; 
+                DatosUsuario.Peso = textBox7.Text;
             }
-            if (!string.IsNullOrWhiteSpace(textBox6.Text))
+            if (textBox6.Text != DatosUsuario.Edad)
             {
-                DatosUsuario.Edad2 = textBox6.Text;
+                DatosUsuario.Edad = textBox6.Text;
             }
-            if (!string.IsNullOrWhiteSpace(textBox5.Text))
+            if (textBox5.Text != DatosUsuario.usuario)
             {
-                DatosUsuario.Nombre2 = textBox5.Text;
+                DatosUsuario.usuario = textBox5.Text;
             }
         }
     }

@@ -65,33 +65,30 @@ namespace WindowsFormsApp4
             string hora = DateTime.Now.Hour.ToString("00");
             string minutos = DateTime.Now.Minute.ToString("00");
 
-            Console.WriteLine($"Día: {dia}, Hora: {hora}, Minutos: {minutos}"); // Depuración
 
-            foreach (Control c in this.Controls)
+            if (minutos == tbMin.Text && hora == tbHora.Text && notificacionMostrada == false)
             {
-                if (c is CheckBox && dia == c.Text.ToLower() && minutos == tbMin.Text && hora == tbHora.Text && !notificacionMostrada)
+                try
                 {
-                    try
-                    {
-                        song.Ctlcontrols.play();
-                        notificacionMostrada = true;
+                    song.Ctlcontrols.play();
+                    notificacionMostrada = true;
 
-                        // 🔹 Mostrar el "1" en la notificación y ocultar el panel de "No hay notificaciones"
-                        principal.MostrarNotificacion(true);
-                        principal.OcultarPanelNoNotificaciones();
+                    // Mostrar la notificación
+                    principal.MostrarNotificacion(true);
+                    principal.OcultarPanelNoNotificaciones();
 
-                        using (Notificacion notificacion = new Notificacion(song, this))
-                        {
-                            notificacion.ShowDialog();
-                        }
-                    }
-                    catch (Exception ex)
+                    using (Notificacion notificacion = new Notificacion(song, this, principal))
                     {
-                        MessageBox.Show(ex.Message);
+                        notificacion.ShowDialog();
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message); // Mostrar el mensaje de error
+                }
+                }
             }
-        }
+        
 
         private void btStop_Click(object sender, EventArgs e)
         {
@@ -103,11 +100,14 @@ namespace WindowsFormsApp4
             timer1.Enabled = false; // Detener el temporizador
             song.Ctlcontrols.stop(); // Detener la canción
             notificacionMostrada = false; // Reiniciar la notificación
+
         }
 
         public void ResetNotificacion()
         {
             notificacionMostrada = false;
+            principal.MostrarNotificacion(false); // Asegurarse de que la notificación se oculte
+            Console.WriteLine("Notificación reiniciada"); // Verificación
         }
     }
 
@@ -116,8 +116,9 @@ namespace WindowsFormsApp4
         private AxWMPLib.AxWindowsMediaPlayer song;
         private Alarma alarma;
         private Button btStop;
+        private FormPrincipal principal1;
 
-        public Notificacion(AxWMPLib.AxWindowsMediaPlayer player, Alarma form)
+        public Notificacion(AxWMPLib.AxWindowsMediaPlayer player, Alarma form, FormPrincipal principal1)
         {
             song = player;
             alarma = form;
@@ -131,20 +132,23 @@ namespace WindowsFormsApp4
             btStop = new Button() { Text = "Detener", Dock = DockStyle.Fill };
             btStop.Click += BtStop_Click;
             this.Controls.Add(btStop);
+            this.principal1 = principal1;
         }
 
         private void BtStop_Click(object sender, EventArgs e)
         {
-            alarma.DetenerAlarma(); // Detener la alarma y el temporizador
-            this.DialogResult = DialogResult.OK;
-            this.Close(); // Cerrar el formulario de notificación
+            alarma.DetenerAlarma();
+            principal1.MostrarNotificacion(true);
+            song.close(); // Asegurar que el audio se detiene
+            this.Close();
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
-            song.Ctlcontrols.stop(); // Detener la canción al cerrar
-            alarma.ResetNotificacion(); // Reiniciar la notificación
+            Console.WriteLine("Cerrando formulario de notificación");
+            song.Ctlcontrols.stop();
+            alarma.ResetNotificacion();
         }
     }
 }

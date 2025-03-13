@@ -44,16 +44,15 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(439, 471);
+            this.label1.Location = new System.Drawing.Point(409, 468);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 33);
+            this.label1.Size = new System.Drawing.Size(223, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(300, 519);
+            this.button1.Location = new System.Drawing.Point(353, 519);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 50);
@@ -68,7 +67,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(556, 519);
+            this.button2.Location = new System.Drawing.Point(609, 519);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 50);
@@ -80,19 +79,18 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(448, 401);
+            this.label2.Location = new System.Drawing.Point(477, 413);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 43);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(15, 610);
+            this.button3.Location = new System.Drawing.Point(12, 574);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(157, 50);
+            this.button3.Size = new System.Drawing.Size(171, 55);
             this.button3.TabIndex = 4;
             this.button3.Text = "Retroceder";
             this.button3.UseVisualStyleBackColor = true;
@@ -100,8 +98,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(300, 105);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(353, 127);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(411, 270);
             this.pictureBox1.TabIndex = 5;

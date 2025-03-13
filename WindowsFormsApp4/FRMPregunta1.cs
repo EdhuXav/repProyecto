@@ -22,7 +22,14 @@ namespace WindowsFormsApp4
 
         private void button4_Click(object sender, EventArgs e)
         {
-            principal.AbrirObjetivos(new FRMPregunta2(principal));
+            if (!string.IsNullOrEmpty(label3.Text))
+            {
+                principal.AbrirObjetivos(new FRMPregunta2(principal));
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una respuesta", "Pregunta sin respuesta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
